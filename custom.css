@@ -1,0 +1,42 @@
+
+.card-container {
+    padding: 20px;
+}
+
+.mentor-card-outer {
+    border-radius: 15px;
+    height: 350px;
+    padding: 50px;
+}
+
+.mentor-card-container {
+    padding: 20px;
+}
+
+.mentor-card {
+    border-width: 1px;
+    height: 140px;
+    padding: 30px;
+}
+
+.mentor-img {
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
+}
+
+.mentor-name {
+    font-size: 16px;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.mentor-college {
+    font-size: 12px;
+    margin-left: 15px;
+}
+
+.mentor-job {
+    font-size: 14px;
+    margin-left: 15px;
+}

@@ -1,0 +1,372 @@
+/* Global Variables */
+:root {
+    --primary-gradient-purple: linear-gradient(315deg, #f9c5d1 0%, #9795ef 74%);
+    /* --button-gradient: linear-gradient(90deg, #5848EA, #9549EB, #6CC644); */
+  }
+  
+  .announcement{
+    background-color:  #6bb329;
+    /*#7ac25b;*/
+    
+  }
+  .announcement a{
+    color:white;
+    text-decoration: none;
+    font-weight : 1000;
+    font-size: 1.2em;
+  }
+  .announcement a span{
+    color:yellow;;
+  }
+  
+  .bg-purple {
+    background: #5848EA !important;
+  }
+  
+  .bg-pink {
+    background: #9549EB !important;
+  }
+  
+  .bg-green {
+    background: #6CC644 !important;
+  }
+  
+  .text-purple {
+    color: #5848EA;
+  }
+  
+  .text-pink {
+    color: #9549EB;
+  }
+  
+  .text-green {
+    color: #6CC644;
+  }
+  
+  body {
+    font-family: Nunito, sans-serif;
+    color: black;
+    background-color: #ebedee;
+  }
+  
+  .nav-link{
+    color:white !important;
+    font-family: Nunito,sans-serif;
+    font-size: medium;
+    font-weight: 400;
+  }
+  .nav-link:hover {
+    border-bottom: 3px solid  #B2E63A;
+  }
+  
+  #cover-banner {
+    background: var(--primary-gradient-purple);
+    height: 100%;
+    width: 100%;
+    color: white;
+  }
+  #course-banner {
+    background: var(--primary-gradient-purple);
+    height: auto;
+    color: dimgray;
+  }
+  
+  #ad-banner {
+    padding: 1.2rem;
+    background: linear-gradient(to right, #d4fc79, #96e6a1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: dimgray;
+  }
+  
+  #placement-banner {
+    padding: 2rem;
+    background: var(--primary-gradient-purple);
+    color: dimgray;
+    color: white;
+  }
+  
+  .section-header {
+    font-weight: 200;
+    font-weight: 200;
+  }
+  
+  .live {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border-radius: 0.25rem;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+  
+  /* Button Styles */
+  @keyframes button-gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .btn {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    position: relative;
+    transition: all 0.2s ease;
+    border-radius: 50rem !important;
+    font-weight: bold;
+  }
+  
+  .btn-white {
+    color: #5848EA;
+    background-color: white;
+    border-color: #fff;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  }
+  
+  .btn-primary {
+    background: var(--primary-gradient-purple);
+  }
+  
+  .btn-outline {
+    color: #fff;
+    border-color: #fff;
+    background-color: transparent;
+    border: 1px solid white;
+  }
+  
+  .btn-move:hover {
+    padding: 0.74rem 2rem;
+    transition: all 0.2s ease;
+  }
+  
+  .btn-static {
+    color: #5848EA;
+    border-color: #5848EA;
+    background-color: transparent;
+    border-radius: 50rem !important;
+    border: 1px solid#5848EA;
+  }
+  
+  .btn-static:hover {
+    color: white;
+    border-color: white;
+    background: var(--primary-gradient-purple);
+    border-radius: 50rem !important;
+    border: 1px solid white;
+  }
+  
+  .btn-simple {
+    color: gray;
+    background-color: transparent;
+  }
+  
+  .btn-gradient-primary {
+    background: var(--primary-gradient-purple);
+    background-size: 150% 150%;
+    color: white;
+  }
+  
+  .btn-gradient-primary:hover {
+    animation: button-gradient 3s ease infinite;
+    color: white;
+  }
+  
+  .tag {
+    color: white;
+    background-color:#98C431;
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    /*margin: 0.1rem;*/
+  }
+  
+  .cardhover:hover {
+    transform: translate(0, -10px);
+    transition: all 0.2s ease;
+    box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.15);
+  }
+  
+  .event-mentor {
+    block-size: 100px;
+    margin-top: -50px;
+  }
+  
+  .rating {
+    font-weight: 700;
+  }
+  
+  .hovershadow {
+    background-color: rgb(252, 252, 252);
+    border: 1px solid rgba(0, 0, 0, 0);
+  }
+  
+  .hovershadow:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+  }
+  
+  .circle {
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: -50px;
+  }
+  
+  #cicle-logo {
+    color: red;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  #footer_img,
+  #header_img {
+    position: absolute;
+  }
+  
+  .floating {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+  }
+  
+  #footer{
+    background: var(--primary-gradient-purple);
+    background-size: cover;
+  }
+  #footer ul li{
+    margin-top: 1rem;
+  }
+  
+  .boy{
+    height: 400px;
+  }
+  .girl{
+    height: 400px;
+  }
+  
+  .reviews{
+    width :100%;
+  }
+  
+  .whatsapp{
+    /* border : 1px solid red; */
+    display: inline-block;
+    position: fixed;
+    bottom: 5%;
+    right: 3%;
+    z-index: 10;
+  }
+  
+  .whatsapp img{
+    height: 80px;
+    width: 80px;
+  }
+  
+  
+  @media(max-width:500px){
+    .video-play{
+      width: 392px;
+      height:220px;
+      margin-top: 20px;;
+    }
+  
+    .girl{
+      height: 200px;
+    }
+  
+    .boy{
+      height: 200px;
+    }
+  
+    #google-signup{
+      width : 140px; 
+    }
+  }
+  
+  
+  @keyframes floating {
+    from {
+      transform: translate(0, 0px);
+    }
+    65% {
+      transform: translate(0, 15px);
+    }
+    to {
+      transform: translate(0, -0px);
+    }
+  }
+  
+  #signup iframe{
+    width:640px;  
+  }
+  
+  #faq .btn{
+    white-space:normal !important;
+    word-wrap:break-word;
+    color: black;
+    opacity: .80;
+  }
+  
+  .social-link{
+    color:white !important;
+    font-family: Nunito,sans-serif;
+    font-size: medium;
+    font-weight: 400;
+  }
+  
+  .udemy-perk-logo {
+    width: 35px;
+  }
+  
+  .mentor-image {
+    margin-top: -75px;
+  }
+  
+  #google-signup{
+    height: 800px;
+  }
+  
+  
+  
+  @media screen and (max-width: 575px){
+    .circle {
+      width: 75px;
+      height: 75px;
+    }
+  
+    .udemy-perk-logo {
+      width: 25px;
+    }
+    
+    #google-signup{
+      max-width: 90%;
+    }
+    .slide-down-card{
+      margin-top: 50px;
+    }
+    .caption-card-small{
+      width: 90%;
+      margin : 0 auto;
+    }
+  
+  }
+  
+  .nav-icons {
+    text-align: center;
+  }
+
+  .nav-icon-img {
+    height: 80px;
+    margin-bottom: 10px;
+  }

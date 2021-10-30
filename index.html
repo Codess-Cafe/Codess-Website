@@ -1,1024 +1,637 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Codess.Cafe</title>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!---Favicon-->
+      <link rel="icon" type="image/png" href="images/logo.png" />
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+      <!--Custom CSS-->
+      <link rel="stylesheet" href="style.css" />
+      <link rel="stylesheet" href="custom.css" />
+      <!---FontAwesome-->
+      <script src="https://use.fontawesome.com/2445c4adc5.js"></script>
+      <!-- Google Font -->
+      <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet" />
+      <title>Codess.Cafe | Pro-bono mentorship program for women in tech</title>
+      <meta property="og:url" content="http://codess.cafe">
+      <meta property="og:type" content="website">
+      <meta property="og:title" content="Codess.Cafe - Pro-bono mentorship program for women in tech">
+      <meta property="og:description" content="Come be a part of a vibrant community of growth oriented women in tech">
+      <meta property="og:image" content="http://prateknarang.com/images/DSAIcon.png">
+      <style type="text/css">
+         .announcement{
+         background-color: #7ac25b;
+         /*#7ac25b;*/
+         }
+         .announcement a{
+         color:white;
+         text-decoration: none;
+         font-weight : 1000;
+         font-size: 1.2em;
+         }
+         .announcement a span{
+         color:yellow;;
+         }
+      </style>
+      <!-- Google Tag Manager -->
+      <script>
+         (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+         })(window,document,'script','dataLayer','GTM-MJTJ4NT');
+      </script>
+      <!-- End Google Tag Manager -->
+   </head>
+   <body>
+      <!-- Google Tag Manager (noscript) -->
+      <noscript>
+         <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJTJ4NT"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+      </noscript>
+      <!-- End Google Tag Manager (noscript) -->
+      <!-- <div class="whatsapp">
+         <a href="https://wa.me/918947050005" target="_blank">
+         <img src="./images/whatsapp.png">
+         </a>
+         </div> -->
+      <!-- <div class="p-3 text-center announcement">
+         <a href="#course_gallery">
+         	October Sale is ON 🔥 - Grab all courses @ Rs. 490/ -
+         Courses now available at Rs. 490 🎉🎉, Coupon Code: "OCT490" 🔥
+         </a>
+         <a href="./python-programming-master-course.html"> Must awaited Python Programming Master course is live.
+         	Check course page for Latest coupons.🔥
+         	 <span> Grab early bird offer at Rs. 360/-</span> 🔥
+         	</a>
+         </div> -->
+      <!-- Bootstrap JavaScript -->
+      <section id="cover-banner" class="w-100">
+         <!--Responsive Navbar-->
+         <nav class="navbar navbar-expand-md navbar-dark bg-transparent">
+            <div class="container">
+               <a class="navbar-brand" href="./index.html">
+               <img src="./images/logo.gif" height="80" />
+               </a>
+               <button class="navbar-toggler" data-toggle="collapse" data-target="#cmnavbar2">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="cmnavbar2">
+                  <ul class="navbar-nav ml-auto">
+                     <button class="btn btn-move btn-white md-3 font-weight-bold" onclick="location.href='#apply'">
+                     Join the Community
+                     </button>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+         <!--Cover Text and Graphic-->
+         <div class="container">
+            <div class="row justify-content-between align-items-center py-5">
+               <div class="col md-6">
+                  <h1 class="display-4 heading font-weight-bold">
+                     Community of <br />Empowered <br />
+                     Women in Tech
+                  </h1>
+                  <p class="lead d-none d-md-block">
+                     Come be a part of a vibrant community of high achieving, growth oriented women in tech.
+                  </p>
+               </div>
+               <div class="col mt-5 sm-3 md-6 self-align-bottom text-right">
+                  <img src="images/banner.png" class="girl"/>
+               </div>
+            </div>
+         </div>
+         <div class="container" style="padding-top: 75px; padding-bottom: 75px;">
+            <div class="row">
+               <a href="#about" class="nav-icons col-md-3 col-lg-2">
+                  <img src="images/about.png" class="nav-icon-img">
+                  <h4 class="tpf-h4 hero-initiative-title">About</h4>
+               </a>
+               <a href="#offerings" class="nav-icons col-md-3 col-lg-2">
+				<img src="images/offerings.png" class="nav-icon-img">
+				<h4 class="tpf-h4 hero-initiative-title">Offerings</h4>
+			 </a>
+			 <a href="#testimonials" class="nav-icons col-md-3 col-lg-2">
+				<img src="images/testimonials.png" class="nav-icon-img">
+				<h4 class="tpf-h4 hero-initiative-title">Testimonials</h4>
+			 </a>
+			 <a href="#mentors" class="nav-icons col-md-3 col-lg-2">
+				<img src="images/mentors.png" class="nav-icon-img">
+				<h4 class="tpf-h4 hero-initiative-title">Mentors</h4>
+			 </a>
+			 <a href="#apply" class="nav-icons col-md-3 col-lg-2">
+				<img src="images/apply.png" class="nav-icon-img">
+				<h4 class="tpf-h4 hero-initiative-title">Apply</h4>
+			 </a>
+			 <a href="#footer" class="nav-icons col-md-3 col-lg-2">
+				<img src="images/contact.png" class="nav-icon-img">
+				<h4 class="tpf-h4 hero-initiative-title">Contact</h4>
+			 </a>
+            </div>
+         </div>
+      </section>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <section id="about" class="container py-5">
+         <div class="row justify-content-center">
+            <div class="container">
+				<div class="row justify-content-between align-items-center py-5">
+					<div class="col-md-6">
+						<img src="images/about-banner2.png" style="width: 100%;"/>
+					</div>
+				   <div class="col-md-6">
+					  <h1 class="display-4 heading font-weight-bold">
+						 Mentorship Matters
+					  </h1>
+					  <p class="lead d-none d-md-block">
+						  <br>
+						 There's a myriad of information out there. A mentor helps navigate the complexities of life and find the best path based on your long term goals.
+						 <br><br>
+						 We helped our mentees get placed in organisations like Google, Microsoft, Amazon, Bloomberg, ByteDance, Adobe, Goldman Sachs, Intuit, Flipkart, Visa, Walmart, Arcesium, DE Shaw, Postman, Accenture, Myntra, Paytm etc.
+					  </p>
+				   </div>
+				</div>
+			 </div>
+         </div>
+      </section>
 
-    <meta property="og:url"         content="Codess.Cafe/" />
-    <meta property="og:type"        content="website" />
-    <meta property="og:description" content="CPro-bono mentorship by Aarnav Jindal for collegiate women in tech, helping them unlock their true potential." />
-    <meta property="og:image"       content="images/logo.jpg/" />
-    <meta property="og:title"       content="Codess.Cafe" />
-    <link rel="shortcut icon"       href="images/logo.jpg" />
+      <section id="offerings">
+         <div class="container-fluid py-5" id="course-banner">
+            <h1 class="display-5 text-center text-light">
+               Program Offerings
+            </h1>
+            <h5 class="text-center text-light">We focus on all round development to make you interview ready 👩🏻‍💻</h5>
+            <div class="container">
+               <div class="row mt-5" style="margin-bottom: 100px;">
+				<div class="col-lg-2 col-6 text-light text-center p-3">
+					<i class="fa fa-code fa-3x" aria-hidden="true"></i>
+					<p class="text-light">Rigorous Coding Practice</p>
+				 </div>
+				 <div class="col-lg-2 col-6 text-light text-center p-3">
+					<i class="fa fa-headphones fa-3x" aria-hidden="true"></i>
+					<p class="text-light">Regular Mock Interviews</p>
+				 </div>
+				 <div class="col-lg-2 col-6 text-light text-center p-3">
+					<i class="fa fa-users fa-3x" aria-hidden="true"></i>
+					<p class="text-light">Scholarship prep sessions</p>
+				 </div>  
+				 <div class="col-lg-2 col-6 text-light text-center p-3">
+					<i class="fa fa-line-chart fa-3x" aria-hidden="true"></i>
+					<p class="text-light">Weekly Progress Tracking</p>
+				 </div>                
+                  <div class="col-lg-2 col-6 text-light text-center p-3">
+                     <i class="fa fa-rocket fa-3x" aria-hidden="true"></i>
+                     <p class="text-light">Career<br>counseling</p>
+                  </div>
+                  
+                  <div class="col-lg-2 col-6 text-light text-center p-3">
+                     <i class="fa fa-diamond fa-3x" aria-hidden="true"></i>
+                     <p class="text-light">Premium<br>Community</p>
+                  </div>
+               </div>
+               <br>
+               <!--<div class="row justify-content-center mt-5">
+                  <button class="btn btn-move btn-outline text-white px-5"> <i class="fa fa-tv"></i> &nbsp; Sign up for Early Bird Access!</button>
+                  </div>-->
+            </div>
+         </div>
+         <div class="container">
+            <div class="row justify-content-between no-gutters">
+               <div class="circle row justify-content-center udemy-perk-logo-container">
+                  <img class="img-fluid udemy-perk-logo" src="images/c++.svg">
+               </div>
+               <div class="circle row justify-content-center udemy-perk-logo-container" style="margin-top: -140px;">
+                  <img src="images/python.svg" class="img-fluid udemy-perk-logo">
+               </div>
+               <div class="circle row justify-content-center udemy-perk-logo-container">
+                  <img src="images/java.svg" class="img-fluid udemy-perk-logo">
+               </div>
+               <div class="circle row justify-content-center udemy-perk-logo-container" style="margin-top: -140px;">
+                  <img src="images/brain.svg" class="img-fluid udemy-perk-logo">
+               </div>
+               <div class="circle row justify-content-center udemy-perk-logo-container">
+                  <img src="images/js.svg" class="img-fluid udemy-perk-logo">
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- ======== OUR STUDENTS ===========  -->
+      <section id="testimonials" class="my-1">
+         <div class="container text-center ">
+            <!-- <h1 class="display-6 text-center font-weight-bold mt-5">Code your dream job with us</h1> -->
+            <h1 class="display-6 text-muted mt-5">What do our students say?</h1>
+            <div class="row">
+               <div class="col-md-4 mb-md-0 mb-4">
+                  <div class="card">
+                     <div class="card-body">
+                        <h5 class="card-title bold6"><strong>Vanshika Arora</strong></h5>
+                        <div class="row px-3 justify-content-center align-items-center">
+                           <p class="card-text mb-0">
+                              <img class="pb-1" src="images/star_filled.svg" />
+                              <img class="pb-1" src="images/star_filled.svg" />
+                              <img class="pb-1" src="images/star_filled.svg" />
+                              <img class="pb-1" src="images/star_filled.svg" />
+                              <img class="pb-1" src="images/star_filled.svg" />
+                           </p>
+                        </div>
+                        <p class="mt-2">
+							Codess cafe is a place of wholesome preparation for your interviews. From getting an opportunity to give mock interviews to having a personal review of your resume, you get every insight of interview preparation. It is a community where people share opportunities and help each other go. The mantra here is to ace interviews and out Mentor Aarnav helps us achieve it come what may!                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4 mb-md-0 mb-4">
+                  <div class="card">
+                     <div class="card-body">
+                        <h5 class="card-title bold6"><strong>Akanksha Tanwar</strong></h5>
+                        <div class="row px-3 justify-content-center align-items-center">
+                           <p class="card-text mb-0">
+                              <img class="pb-1" src="images/star_filled.svg" />
+                              <img class="pb-1" src="images/star_filled.svg" />
+                              <img class="pb-1" src="images/star_filled.svg" />
+                              <img class="pb-1" src="images/star_filled.svg" />
+                              <img class="pb-1" src="images/star_filled.svg" />
+                           </p>
+                        </div>
+                        <p class="mt-2">
+							If I had to best describe Codess.Cafe, I would say, I am a part of this small but thriving community of extremely smart women, who with the help of our talented mentor Aarnav Jindal are pushing our boundaries to become better at what we do. The idea is to throw away any inhibitions and doubts one has about herself, and look beyond what we've been told always by the society. The very streamlined nature of the material shared by Aarnav sir does exactly that! I am very grateful to be a part of this program.                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4 mb-md-0 mb-4">
+                  <div class="card">
+                     <div class="card-body">
+                        <h5 class="card-title bold6"><strong>Vinamr Bajaj</strong></h5>
+                        <div class="row px-3 justify-content-center align-items-center">
+                           <p class="card-text mb-0">
+                              <img class="pb-1" src="images/star_filled.svg" />
+                              <img class="pb-1" src="images/star_filled.svg" />
+                              <img class="pb-1" src="images/star_filled.svg" />
+                              <img class="pb-1" src="images/star_filled.svg" />
+                              <img class="pb-1" src="images/star_filled.svg" />
+                           </p>
+                        </div>
+                        <p class="mt-2">
+							Getting the right guidance at the right time is really important and I am grateful to get is from Aarnav Jindal under this program. He not only guided me but also took mock interviews which boosted my confidence and gave me a chance to analyse and improve and He always helped me in staying positive even after rejections. Thanks Aarnav and Codess.Cafe.                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="container-fluid mt-5" id="placement-banner">
+            <div class="container text-center">
+               <h1 class="display-6 text-center font-weight-bold">Numbers Speak Louder</h1>
+               <div class="row">
+				<div class="col-lg-3 col-sm-6 mt-3">
+					<h4 class="display-4 font-weight-bold">200+</h4>
+					<h5>Community members</h5>
+				 </div>
+                  <div class="col-lg-3 col-sm-6 mt-3">
+                     <h4 class="display-4 count font-weight-bold">300+</h4>
+                     <h5>Offers and scholarships bagged</h5>
+                  </div>
+                  
+                  <div class="col-lg-3 col-sm-6 mt-3">
+                     <h4 class="display-4 count font-weight-bold">40+</h4>
+                     <h5>Companies</h5>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 mt-3">
+                     <h4 class="display-4 count font-weight-bold">22,00,000+</h4>
+                     <h5>Avg CTC</h5>
+                  </div>
+               </div>
+               <!--    <h5 class="display-6 text-center mt-5">Our Alumni Work at</h5>
+                  <div class="row justify-content-center mt">
+                      <img class="img-fluid udemy-perk-logo" src="images/company-strip.svg">
+                  </div> -->
+            </div>
+         </div>
+      </section>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-    <link rel="stylesheet" crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/font-awesome.css">
-    <link rel="stylesheet" href="css/custom2.css">
-    <link rel="stylesheet" href="css/custom.css">
-    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
-    <script src="js/increment.js"></script>
-</head>
-<body>
-<div class="bg-start">
-    <div style="width: 100%; padding: 20px; background-color: #ffdcdc; align-items: center">
-        <a href="./pm.html" style="font-size: 20px; color: black">Check out our new Product Management track</a>
-    </div>
-    <nav class="navbar navbar-custom navbar-expand-md navbar-light">
-        <div class="container">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse">
-                <ul class="nav navbar-nav ml-auto nav-effect">
-                    <li>
-                        <a data-scroll href="#about">
-                    <span data-hover="About">
-                        About
-                    </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a data-scroll href="#objective">
-                    <span data-hover="Objectives">
-                        Objectives
-                    </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a data-scroll href="#mentors">
-                    <span data-hover="Mentors">
-                        Mentors
-                    </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a data-scroll href="#testimonials">
-                    <span data-hover="Testimonials">
-                        Testimonials
-                    </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a data-scroll href="#apply">
-                    <span data-hover="Apply">
-                        Apply
-                    </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a data-scroll href="#contact">
-                    <span data-hover="Contact Us">
-                        Contact Us
-                    </span>
-                        </a>
-                    </li>
-                </ul>
+      <section id="team" class="my-5">
+         <div class="container text-center">
+            <div class="row justify-content-center">
+               <div class="col-12 mb-5">
+                  <h1 class="display-6 text-center font-weight-bold">Meet the Team</h1>
+                  <p class="lead">Meet our fabulous team of 10x mentors</p>
+               </div>
+               <div>
+                     <div style="padding: 0 40px">
+                         <div class="row">
+                             <div class="col-lg-4 col-md-6 mentor-card-container">
+                                 <div class="card mentor-card-outer mentor-card">
+                                     <div class="row" style="display: flex">
+                                         <img src="images/mentor/14.jpg" class="mentor-img">
+                                         <div>
+                                             <span class="mentor-name">Aarnav Jindal</span><br>
+                                             <span class="mentor-job">SDE: Cure.Fit</span><br>
+                                             <span class="mentor-college">Founder Codess.Cafe</span>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="col-lg-4 col-md-6 mentor-card-container">
+<div class="card mentor-card-outer mentor-card">                                     <div class="row" style="display: flex">
+                                         <img src="images/mentor/8.jpg" class="mentor-img">
+                                         <div>
+                                             <span class="mentor-name">Aditi Aggrawal</span><br>
+                                             <span class="mentor-job">SDE Intern: Goldman Sachs</span><br>
+                                             <span class="mentor-college">IT, DTU</span>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="col-lg-4 col-md-6 mentor-card-container">
+<div class="card mentor-card-outer mentor-card">                                     <div class="row" style="display: flex">
+                                         <img src="images/mentor/6.jpg" class="mentor-img">
+                                         <div>
+                                             <span class="mentor-name">Aeshna Jain</span><br>
+                                             <span class="mentor-job">SDE Intern: Microsoft</span><br>
+                                             <span class="mentor-college">IT, IGDTUW</span>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="col-lg-4 col-md-6 mentor-card-container">
+<div class="card mentor-card-outer mentor-card">                                     <div class="row" style="display: flex">
+                                         <img src="images/mentor/0.jpg" class="mentor-img">
+                                         <div>
+                                             <span class="mentor-name">Aiman Siddiqua</span><br>
+                                             <span class="mentor-job">SDE Intern: Amazon</span><br>
+                                             <span class="mentor-college">MCE, DTU</span>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="col-lg-4 col-md-6 mentor-card-container">
+<div class="card mentor-card-outer mentor-card">                                     <div class="row" style="display: flex">
+                                         <img src="images/mentor/2.jpg" class="mentor-img">
+                                         <div>
+                                             <span class="mentor-name">Akanksha Tanwar</span><br>
+                                             <span class="mentor-job">SDE Intern: Microsoft</span><br>
+                                             <span class="mentor-college">IT, DTU</span>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="col-lg-4 col-md-6 mentor-card-container">
+<div class="card mentor-card-outer mentor-card">                                     <div class="row" style="display: flex">
+                                         <img src="images/mentor/1.jpg" class="mentor-img">
+                                         <div>
+                                             <span class="mentor-name">Chitra Singla</span><br>
+                                             <span class="mentor-job">SDE Intern: Amazon</span><br>
+                                             <span class="mentor-college">CSE, DTU</span>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="col-lg-4 col-md-6 mentor-card-container">
+<div class="card mentor-card-outer mentor-card">                                     <div class="row" style="display: flex">
+                                         <img src="images/mentor/9.jpg" class="mentor-img">
+                                         <div>
+                                             <span class="mentor-name">Deepti Aggarwal</span><br>
+                                             <span class="mentor-job">SDE Intern: Microsoft</span><br>
+                                             <span class="mentor-college">CSE, DTU</span>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="col-lg-4 col-md-6 mentor-card-container">
+<div class="card mentor-card-outer mentor-card">                                     <div class="row" style="display: flex">
+                                         <img src="images/mentor/4.jpg" class="mentor-img">
+                                         <div>
+                                             <span class="mentor-name">Joshika</span><br>
+                                             <span class="mentor-job">SDE: Morgan-Stanley</span><br>
+                                             <span class="mentor-college">CSE, IIT Patna</span>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="col-lg-4 col-md-6 mentor-card-container">
+<div class="card mentor-card-outer mentor-card">                                     <div class="row" style="display: flex">
+                                         <img src="images/mentor/10.jpg" class="mentor-img">
+                                         <div>
+                                             <span class="mentor-name">Kirti Dabas</span><br>
+                                             <span class="mentor-job">SDE Intern: Google</span><br>
+                                             <span class="mentor-college">CSE, DTU</span>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="col-lg-4 col-md-6 mentor-card-container">
+<div class="card mentor-card-outer mentor-card">                                     <div class="row" style="display: flex">
+                                         <img src="images/mentor/7.jpg" class="mentor-img">
+                                         <div>
+                                             <span class="mentor-name">Krati Garg</span><br>
+                                             <span class="mentor-job">SDE Intern: Google</span><br>
+                                             <span class="mentor-college">CSE, DTU</span>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="col-lg-4 col-md-6 mentor-card-container">
+<div class="card mentor-card-outer mentor-card">                                     <div class="row" style="display: flex">
+                                         <img src="images/mentor/11.jpg" class="mentor-img">
+                                         <div>
+                                             <span class="mentor-name">Ojasvi Tyagi</span><br>
+                                             <span class="mentor-job">SDE Intern: Uber</span><br>
+                                             <span class="mentor-college">CSE, IGDTUW</span>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="col-lg-4 col-md-6 mentor-card-container">
+<div class="card mentor-card-outer mentor-card">                                     <div class="row" style="display: flex">
+                                         <img src="images/mentor/3.jpg" class="mentor-img">
+                                         <div>
+                                             <span class="mentor-name">Prachi Singhal</span><br>
+                                             <span class="mentor-job">SDE Intern: VMWare</span><br>
+                                             <span class="mentor-college">CSE, Mody university</span>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="col-lg-4 col-md-6 mentor-card-container">
+<div class="card mentor-card-outer mentor-card">                                     <div class="row" style="display: flex">
+                                         <img src="images/mentor/12.jpg" class="mentor-img">
+                                         <div>
+                                             <span class="mentor-name">Radhika Patwari</span><br>
+                                             <span class="mentor-job">SDE Intern: Google</span><br>
+                                             <span class="mentor-college">CSE, IIT Kharagpur</span>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="col-lg-4 col-md-6 mentor-card-container">
+<div class="card mentor-card-outer mentor-card">                                     <div class="row" style="display: flex">
+                                         <img src="images/mentor/13.jpg" class="mentor-img">
+                                         <div>
+                                             <span class="mentor-name">Sangeeta Mishra</span><br>
+                                             <span class="mentor-job">SDE Intern: Google</span><br>
+                                             <span class="mentor-college">Chemical, IIT BHU</span>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="col-lg-4 col-md-6 mentor-card-container">
+<div class="card mentor-card-outer mentor-card">                                     <div class="row" style="display: flex">
+                                         <img src="images/mentor/5.jpg" class="mentor-img">
+                                         <div>
+                                             <span class="mentor-name">Sanskriti Singhal</span><br>
+                                             <span class="mentor-job">SDE: Google</span><br>
+                                             <span class="mentor-college">SE, DTU</span>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+               </div>
+         </div>
+      </section>
+
+      <section id="apply">
+         <div class="container">
+            <div class="col-12 mb-5">
+               <h1 class="display-6 text-center font-weight-bold">Apply</h1>
+               <!-- <p class="lead">Meet our fabulous team of 10x mentors</p> -->
             </div>
-        </div>
-    </nav>
-    <img style="width: 250px;margin-left: 20px" src="images/main.png" alt="Logo">
-    <div class="row" style="margin: 0;padding: 0;margin-top: 20%">
-        <div class="col">
-            <h1 style=";font-weight: bold;font-size: 50px;text-align: center;color: #000000" class="img-vis">THE NEXT GENERATION OF<br>WOMEN CODERS</h1>
-        </div>
-    </div>
-</div>
-<div id="about" style="background-size: cover;background-position: center;background-image: url(./images/graph_bg.png)">
-    <div class="container">
-        <div class="row" style="padding-right: 10%;padding-left: 10%;padding-top: 5%; padding-bottom: 3%">
-            <div class="col-lg-12">
-                <h1 class="text-center">Empowering next generation</h1>
-                <h1 class="text-center">of women in tech</h1>
-                <h6 class="text-center color-grey">Helping women achieve their career goals in the software industry</h6>
-            </div>
-        </div>
-        <div class="row" style="padding-right: 5%;padding-left: 5%;padding-bottom: 5%;padding-top: 5%">
-            <div style="padding: 5px" class="col-md-4">
-                <div class="text-center color-grey about-item">
-                    <i class="fa fa-desktop color-main" aria-hidden="true" style="font-size: 80px"></i>
-                    <br><br>
-                    <h1 class="text-gray-dark counter-value" data-count="273"></h1>
-                    Successful mock interviews conducted for diverse range of FAANG and other MNCs
-                </div>
-            </div>
-            <div style="padding: 5px" class="col-md-4">
-                <div class="text-center color-grey about-item">
-                    <i class="fa fa-users color-main" aria-hidden="true" style="font-size: 80px"></i>
-                    <br><br>
-                    <h1 class="counter-value" data-count="806"></h1>
-                    Number of hours spent in mentoring, training and supporting the program members<br>
-                </div>
-            </div>
-            <div style="padding: 5px" class="col-md-4">
-                <div class="text-center color-grey about-item">
-                    <span class="fa-stack fa-lg color-main" aria-hidden="true" style="font-size: 40px">
-                      <i class="fa fa-circle fa-stack-2x"></i>
-                      <i class="fa fa-usd fa-stack-1x text-white"></i>
-                    </span>
-                    <br><br>
-                    <h1 class="text-gray-dark counter-value" data-count="2209877"></h1>
-                    Average CTC of women in the program who have received top-notch offers from reputed MNCs
-                </div>
-            </div>
-        </div>
-        <div id="counter"></div>
-    </div>
-</div>
-<div>
-    <div id="objective">
-        <div class="container" style="padding: 5%">
             <div class="row">
-                <div class="col-lg-12" style="padding-bottom: 3%;padding-top: 3%">
-                    <h1 class="text-center" style="font-size: 50px">Objectives</h1>
+                <div class="col-lg-12" style="padding-bottom: 3%;">
+                    <h1 class="text-center" style="font-size: 25px">We release forms regularly on LinkedIn to take new members</h1>
+                    <h1 class="text-center" style="font-size: 25px">We have two intake programs depending on your year of study</h1>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 text-msg hover-gray">
-                    <img src="images/coding.png" style="width: 100%">
-                    <h5>Rigorous Coding</h5>
-                    <p class="full-text" style="font-size: small;margin-bottom: 0">
-                        A carefully consolidated list of 350+ coding questions covering and strengthening
-                        the basics of interview programming is provided.
-                        The questions help form a strong base for FAANG and other MNCs.</p>
-                    <p class="short-text" style="font-size: small;margin-bottom: 0">
-                        A carefully consolidated list of coding questions strengthening the basics of programming is provided.
-                    </p>
+                <div class="col-lg-12" style="padding-bottom: 3%;">
+                    <h1 class="text-center" style="font-size: 20px">Codess.Cafe : For 3rd, 4th and 5th year students</h1>
+                    <h2 class="text-center" style="font-size: 20px">Applications releasing in last week of November</h2>
+                    <br/>
+                    <h1 class="text-center" style="font-size: 20px">Codess.Cafe Sophomore: For 2nd year students</h1>
+                    <h2 class="text-center" style="font-size: 20px">Applications releasing in last week of November</h2>
                 </div>
-                <div class="col-md-6 text-msg hover-gray">
-                    <img src="images/mock.png" style="width: 100%">
-                    <h5>Mock Interviews</h5>
-                    <p class="full-text" style="font-size: small;margin-bottom: 0">
-                        Weekly mocks are conducted to provide an atmosphere similar to
-                        an actual interview which helps increase confidence and comfort.
-                        Participants with frequent mocks grab jobs quicker on average.
-                    </p>
-                    <p class="short-text" style="font-size: small;margin-bottom: 0">
-                        Mocks replicate actual interviews very closely which helps increase confidence and comfort.
-                    </p>
-                </div>
-                <div class="col-md-6 text-msg hover-gray">
-                    <img src="images/meeting.png" style="width: 100%">
-                    <h5>Weekly Catch-ups</h5>
-                    <p class="full-text" style="font-size: small;margin-bottom: 0">
-                        With weekly online group meetings participants share their
-                        developments and shortcomings and probable progress strategies
-                        are discussed. Weekly catch-ups give ample time to test if prep
-                        strategy works and possible amends.
-                    </p>
-                    <p class="short-text" style="font-size: small;margin-bottom: 0">
-                        Weekly catch-ups give ample time to test if prep strategy works and possible amends.
-                    </p>
-                </div>
-                <div class="col-md-6 text-msg hover-gray">
-                    <img src="images/progress.png" style="width: 100%">
-                    <h5>Progress Tracking</h5>
-                    <p class="full-text" style="font-size: small;margin-bottom: 0">
-                        Weekly meetings are used to gauge progress over the week. The progress
-                        is compared with previous weeks to anaylze improvement and growth curve
-                        and decide on changed requires to meet targets.
-                    </p>
-                    <p class="short-text" style="font-size: small;margin-bottom: 0">
-                        Weekly meetings are used to gauge progress over the week and decide on changed requires to meet targets.
-                    </p>
-                </div>
-                <div class="col-md-6 text-msg hover-gray">
-                    <img src="images/support.png" style="width: 100%">
-                    <h5>Group Support</h5>
-                    <p class="full-text" style="font-size: small;margin-bottom: 0">
-                        The presence of a group of individuals with similar goals
-                        yet different backgrounds and skill sets helps in exchange
-                        of ideas and varied ways to hone personal skills.
-                    </p>
-                    <p class="short-text" style="font-size: small;margin-bottom: 0">
-                        Groups help in exchangeof ideas and varied ways to hone personal skills.
-                    </p>
-                </div>
-                <div class="col-md-6 text-msg hover-gray">
-                    <img src="images/consult.png" style="width: 100%">
-                    <h5>Quick Consulting</h5>
-                    <p class="full-text" style="font-size: small;margin-bottom: 0">
-                        Availability of a quick and experienced mentor is required when competing
-                        in the job market. Personal 24/7 help is provided to all the
-                        participants without fail.
-                    </p>
-                    <p class="short-text" style="font-size: small;margin-bottom: 0">
-                        Personal 24/7 help is provided to all the participants without fail.
-                    </p>
-                </div>
+                <div class="col-lg-12" style="padding-bottom: 3%;">
+                  <h1 class="text-center" style="font-size: 20px">Application process - </h1>
+                  <h1 class="text-center" style="font-size: 15px">
+                     1. Fill the Google form released on LinkedIn on our Codess.Cafe LinkedIn page<br>
+                     2. Our team of 30+ mentors reviews the resumes and pick the mentees they're interested in mentoring<br>
+                     3. Shortlisted members are contacted via mail, linkedIn or whatsapp within 14 days<br>
+                     4. New members are added to invited to join Codess.Cafe Discord channel and the growth begins !
+                  </h1>
+              </div>
             </div>
         </div>
-    </div>
-</div>
-<div id="mentors">
-    <div class="container" style="padding: 5% 5% 0;">
-        <div class="row">
-            <div class="col-lg-12" style="padding-bottom: 3%;padding-top: 3%">
-                <h1 class="text-center" style="font-size: 50px">Mentors</h1>
+      </section>
+
+      <section id="faq">
+         <div class="container text-left">
+            <h1 class="text-center font-weight-bold"> FAQ's</h1>
+            <p class="text-muted text-center">Frequently Asked Questions</p>
+            <div id="accordion">
+               <div class="card">
+                  <div class="card-header" id="headingTwo">
+                     <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                           aria-expanded="false" aria-controls="collapseTwo">
+                        How long is the program ?
+                        </button>
+                     </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                     <div class="card-body">
+                        There is no fixed duration. Stay and enjoy the benefits of community and mentorship as long as you would like 🙂
+                     </div>
+                  </div>
+               </div>
+               <div class="card">
+                  <div class="card-header" id="headingThree">
+                     <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                           aria-expanded="false" aria-controls="collapseThree">
+                        Is the program paid ?
+                        </button>
+                     </h5>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                     <div class="card-body">
+                        The program is completely free, thanks to our generous mentors 🙌
+                     </div>
+                  </div>
+               </div>
+               <div class="card">
+                  <div class="card-header" id="headingFour">
+                     <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                           aria-controls="collapseFour">
+                        What are the pre-requisites for this program ?
+                        </button>
+                     </h5>
+                  </div>
+                  <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                     <div class="card-body">
+                        No pre-requisites, we only need highly motivated individuals 🤓
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-    </div>
-    <div style="padding: 0 40px">
-        <div class="row">
-            <div class="col-lg-4 col-md-6 mentor-card-container">
-                <div class="card mentor-card">
-                    <div class="row" style="display: flex">
-                        <img src="images/mentor/14.jpg" class="mentor-img">
-                        <div>
-                            <span class="mentor-name">Aarnav Jindal</span><br>
-                            <span class="mentor-job">SDE: Cure.Fit</span><br>
-                            <span class="mentor-college">Founder Codess.Cafe</span>
-                        </div>
-                    </div>
-                </div>
+            <div class="card">
+               <div class="card-header" id="headingFive">
+                  <h5 class="mb-0">
+                     <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
+                        aria-controls="collapseFive">
+                     Is this program only for women ?
+                     </button>
+                  </h5>
+               </div>
+               <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                  <div class="card-body">
+                     Yes, this is a community and mentorship program just for women.
+                  </div>
+               </div>
             </div>
-            <div class="col-lg-4 col-md-6 mentor-card-container">
-                <div class="card mentor-card">
-                    <div class="row" style="display: flex">
-                        <img src="images/mentor/8.jpg" class="mentor-img">
-                        <div>
-                            <span class="mentor-name">Aditi Aggrawal</span><br>
-                            <span class="mentor-job">SDE Intern: Goldman Sachs</span><br>
-                            <span class="mentor-college">IT, DTU</span>
-                        </div>
-                    </div>
-                </div>
+         </div>
+         </div>
+         <div style="height:100px"></div>
+      </section>
+      <!--Footer-->
+      <section id="footer" class="p-5">
+         <div>
+         <div class="container text-center">
+         <img src="images/logo.gif" width="200px">
+         <div class="row mt-5 text-center text-light">
+            <div class="col-sm-6 text-left">
+               <h4 class="lead"><strong>Get in Touch</strong></h4>
+               <br>
+               <a class="social-link" href="mailto: aarnavjindal1000@gmail.com">
+                  <p><i class="fa fa-envelope fa-2x" aria-hidden="true"> </i>  Connect over email
+                  </p>
+               </a>
+               <a class="social-link" target="_blank" href="https://www.linkedin.com/company/codesscafe/">
+                  <p><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"> </i>  Follow on LinkedIn
+                  </p>
+               </a>
             </div>
-            <div class="col-lg-4 col-md-6 mentor-card-container">
-                <div class="card mentor-card">
-                    <div class="row" style="display: flex">
-                        <img src="images/mentor/6.jpg" class="mentor-img">
-                        <div>
-                            <span class="mentor-name">Aeshna Jain</span><br>
-                            <span class="mentor-job">SDE Intern: Microsoft</span><br>
-                            <span class="mentor-college">IT, IGDTUW</span>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-sm-6 text-left">
+               <h4 class="lead"><strong>Codess.Cafe</strong></h4>
+               <p class="text-white">
+                  Codess.Cafe was started with a vision to empower women in tech to grab the opportunities they deserve. 
+                  With dedicated, quality guidance and mentorship, we wish to improve the represenation of women in 
+                  high impact organisations for a better and more inclusive future.
+               </p>
             </div>
-            <div class="col-lg-4 col-md-6 mentor-card-container">
-                <div class="card mentor-card">
-                    <div class="row" style="display: flex">
-                        <img src="images/mentor/0.jpg" class="mentor-img">
-                        <div>
-                            <span class="mentor-name">Aiman Siddiqua</span><br>
-                            <span class="mentor-job">SDE Intern: Amazon</span><br>
-                            <span class="mentor-college">MCE, DTU</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mentor-card-container">
-                <div class="card mentor-card">
-                    <div class="row" style="display: flex">
-                        <img src="images/mentor/2.jpg" class="mentor-img">
-                        <div>
-                            <span class="mentor-name">Akanksha Tanwar</span><br>
-                            <span class="mentor-job">SDE Intern: Microsoft</span><br>
-                            <span class="mentor-college">IT, DTU</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mentor-card-container">
-                <div class="card mentor-card">
-                    <div class="row" style="display: flex">
-                        <img src="images/mentor/1.jpg" class="mentor-img">
-                        <div>
-                            <span class="mentor-name">Chitra Singla</span><br>
-                            <span class="mentor-job">SDE Intern: Amazon</span><br>
-                            <span class="mentor-college">CSE, DTU</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mentor-card-container">
-                <div class="card mentor-card">
-                    <div class="row" style="display: flex">
-                        <img src="images/mentor/9.jpg" class="mentor-img">
-                        <div>
-                            <span class="mentor-name">Deepti Aggarwal</span><br>
-                            <span class="mentor-job">SDE Intern: Microsoft</span><br>
-                            <span class="mentor-college">CSE, DTU</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mentor-card-container">
-                <div class="card mentor-card">
-                    <div class="row" style="display: flex">
-                        <img src="images/mentor/4.jpg" class="mentor-img">
-                        <div>
-                            <span class="mentor-name">Joshika</span><br>
-                            <span class="mentor-job">SDE: Morgan-Stanley</span><br>
-                            <span class="mentor-college">CSE, IIT Patna</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mentor-card-container">
-                <div class="card mentor-card">
-                    <div class="row" style="display: flex">
-                        <img src="images/mentor/10.jpg" class="mentor-img">
-                        <div>
-                            <span class="mentor-name">Kirti Dabas</span><br>
-                            <span class="mentor-job">SDE Intern: Google</span><br>
-                            <span class="mentor-college">CSE, DTU</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mentor-card-container">
-                <div class="card mentor-card">
-                    <div class="row" style="display: flex">
-                        <img src="images/mentor/7.jpg" class="mentor-img">
-                        <div>
-                            <span class="mentor-name">Krati Garg</span><br>
-                            <span class="mentor-job">SDE Intern: Google</span><br>
-                            <span class="mentor-college">CSE, DTU</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mentor-card-container">
-                <div class="card mentor-card">
-                    <div class="row" style="display: flex">
-                        <img src="images/mentor/11.jpg" class="mentor-img">
-                        <div>
-                            <span class="mentor-name">Ojasvi Tyagi</span><br>
-                            <span class="mentor-job">SDE Intern: Uber</span><br>
-                            <span class="mentor-college">CSE, IGDTUW</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mentor-card-container">
-                <div class="card mentor-card">
-                    <div class="row" style="display: flex">
-                        <img src="images/mentor/3.jpg" class="mentor-img">
-                        <div>
-                            <span class="mentor-name">Prachi Singhal</span><br>
-                            <span class="mentor-job">SDE Intern: VMWare</span><br>
-                            <span class="mentor-college">CSE, Mody university</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mentor-card-container">
-                <div class="card mentor-card">
-                    <div class="row" style="display: flex">
-                        <img src="images/mentor/12.jpg" class="mentor-img">
-                        <div>
-                            <span class="mentor-name">Radhika Patwari</span><br>
-                            <span class="mentor-job">SDE Intern: Google</span><br>
-                            <span class="mentor-college">CSE, IIT Kharagpur</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mentor-card-container">
-                <div class="card mentor-card">
-                    <div class="row" style="display: flex">
-                        <img src="images/mentor/13.jpg" class="mentor-img">
-                        <div>
-                            <span class="mentor-name">Sangeeta Mishra</span><br>
-                            <span class="mentor-job">SDE Intern: Google</span><br>
-                            <span class="mentor-college">Chemical, IIT BHU</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mentor-card-container">
-                <div class="card mentor-card">
-                    <div class="row" style="display: flex">
-                        <img src="images/mentor/5.jpg" class="mentor-img">
-                        <div>
-                            <span class="mentor-name">Sanskriti Singhal</span><br>
-                            <span class="mentor-job">SDE: Google</span><br>
-                            <span class="mentor-college">SE, DTU</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div>
-    <div id="testimonials">
-        <div class="container" style="padding: 5% 5% 0;">
-            <div class="row">
-                <div class="col-lg-12" style="padding-bottom: 3%;padding-top: 3%">
-                    <h1 class="text-center" style="font-size: 50px">Testimonials</h1>
-                </div>
-            </div>
-        </div>
-        <div style="padding: 0 40px">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 card-container">
-                    <div class="card">
-                        <div class="row" style="display: flex">
-                            <img src="images/codess/0.jpg" class="codess-img">
-                            <div>
-                                <span class="codess-name">Aiman Siddiqua</span><br>
-                                <span class="codess-college">MCE, DTU</span>
-                            </div>
-                            <div style="flex-grow: 1">
-                                <img class="tag" src="images/tag.png">
-                            </div>
-                        </div>
-                        <span class="review">
-                                I was a part of the Codess.Cafe programme, which is an initiative by Aarnav Jindal
-                                to help and guide women in tech. The programme helped me a lot during my internship
-                                season and helped me bag an internship at Amazon. A big thank you to Aarnav for this
-                                amazing programme and for being a wonderful mentor! He guided and supported me,
-                                reviewed my resume,  took my mock interview, and helped me realize my strengths
-                                and weaknesses. He would conduct weekly session to monitor the progress of the girls
-                                in this programme and that helped us to set weekly goals and targets. Codess.Cafe is
-                                a wonderful initiative by Aarnav Jindal for girls!!
-                        </span>
-                        <div class="company-container">
-                            Placed at <img class="codess-company" src="images/logos/amazon.png">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 card-container">
-                    <div class="card">
-                        <div class="row" style="display: flex">
-                            <img src="images/codess/1.jpg" class="codess-img">
-                            <div>
-                                <span class="codess-name">Chitra Singla</span><br>
-                                <span class="codess-college">CSE, DTU</span>
-                            </div>
-                            <div style="flex-grow: 1">
-                                <img class="tag" src="images/tag.png">
-                            </div>
-                        </div>
-                        <span class="review">
-                                I was a part of codess.cafe mentorship. It was a great experience. The weekly sessions were
-                            amazing. All the doubts were cleared and also Interview experience of top product based companies
-                            was shared. Mock interviews were also helpful. You can connect with other mentees who are from
-                            different colleges.
-                            I would recommend all the girls who are in a dilemma of how to prepare and what to do for their
-                            upcoming internships or placements should join.
-                        </span>
-                        <div class="company-container">
-                            Placed at <img class="codess-company" src="images/logos/amazon.png">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 card-container">
-                    <div class="card">
-                        <div class="row" style="display: flex">
-                            <img src="images/codess/2.jpg" class="codess-img">
-                            <div>
-                                <span class="codess-name">Akanksha Tanwar</span><br>
-                                <span class="codess-college">IT, DTU</span>
-                            </div>
-                            <div style="flex-grow: 1">
-                                <img class="tag" src="images/tag.png">
-                            </div>
-                        </div>
-                        <span class="review">
-                                If I had to best describe Codess.Cafe, I would say, I am a part of this small but
-                            thriving community of extremely smart women, who with the help of our talented mentor
-                            Aarnav Jindal are pushing our boundaries to become better at what we do. The idea is
-                            to throw away any inhibitions and doubts one has about herself, and look beyond what
-                            we've been told always by the society. The very streamlined nature of the material
-                            shared by Aarnav sir does exactly that! I am very grateful to be a part of this program.
-                        </span>
-                        <div class="company-container">
-                            Placed at <img class="codess-company" src="images/logos/microsoft.png">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 card-container">
-                    <div class="card">
-                        <div class="row" style="display: flex">
-                            <img src="images/codess/3.jpg" class="codess-img">
-                            <div>
-                                <span class="codess-name">Vanshika Arora</span><br>
-                                <span class="codess-college">M&C, IIT(Dhanbad)</span>
-                            </div>
-                            <div style="flex-grow: 1">
-                                <img class="tag" src="images/tag.png">
-                            </div>
-                        </div>
-                        <span class="review">
-                                Codess cafe is a place of wholesome preparation for your interviews.
-                            From getting an opportunity to give mock interviews to having a personal
-                            review of your resume, you get every insight of interview preparation. It
-                            is a community where people share opportunities and help each other go.
-                            The mantra here is to ace interviews and out Mentor Aarnav helps us achieve
-                            it come what may!
-                        </span>
-                        <div class="company-container">
-                            Placed at <img class="codess-company" src="images/logos/microsoft.png">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 card-container">
-                    <div class="card">
-                        <div class="row" style="display: flex">
-                            <img src="images/codess/4.jpg" class="codess-img">
-                            <div>
-                                <span class="codess-name">Garima Mahajan</span><br>
-                                <span class="codess-college">IT, MKSSS</span>
-                            </div>
-                            <div style="flex-grow: 1">
-                                <img class="tag" src="images/tag.png">
-                            </div>
-                        </div>
-                        <span class="review">
-                                Thank you for such a program. You are actually going great.
-                            This is actually of great help to someone who needs guidance.
-                        </span>
-                        <div class="company-container">
-                            Placed at <img class="codess-company" src="images/logos/walmart.png">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 card-container">
-                    <div class="card">
-                        <div class="row" style="display: flex">
-                            <img src="images/codess/5.jpg" class="codess-img">
-                            <div>
-                                <span class="codess-name">Prachi Singhal</span><br>
-                                <span class="codess-college">CSE, Mody university</span>
-                            </div>
-                            <div style="flex-grow: 1">
-                                <img class="tag" src="images/tag.png">
-                            </div>
-                        </div>
-                        <span class="review">
-                                Getting the right guidance at the right time is really important and
-                            I am grateful to get is from Aarnav Jindal  under this program. He not
-                            only guided me but also took mock interviews which boosted my confidence
-                            and gave me a chance to analyse and improve and He always helped me in
-                            staying positive even after rejections. Thanks Aarnav and Codess.Cafe.
-                        </span>
-                        <div class="company-container">
-                            Placed at <img class="codess-company" src="images/logos/myntra.png">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 card-container">
-                    <div class="card">
-                        <div class="row" style="display: flex">
-                            <img src="images/codess/6.jpg" class="codess-img">
-                            <div>
-                                <span class="codess-name">Ira Aggarwal</span><br>
-                                <span class="codess-college">CSE, IIIT Delhi</span>
-                            </div>
-                            <div style="flex-grow: 1">
-                                <img class="tag" src="images/tag.png">
-                            </div>
-                        </div>
-                        <span class="review">
-                                Thankyou Aarnav. You have been a great source of inspiration
-                            and guidance for me.
-                        </span>
-                        <div class="company-container">
-                            Placed at <img class="codess-company" src="images/logos/gs.png">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 card-container">
-                    <div class="card">
-                        <div class="row" style="display: flex">
-                            <img src="images/codess/7.jpg" class="codess-img">
-                            <div>
-                                <span class="codess-name">Ashi Gupta</span><br>
-                                <span class="codess-college">CSE, DTU</span>
-                            </div>
-                            <div style="flex-grow: 1">
-                                <img class="tag" src="images/tag.png">
-                            </div>
-                        </div>
-                        <span class="review">
-                                 Thanks for the guidance. It was a great program.
-                            And I highly recommend it for anyone trying to get a great
-                            job in the tech sector.
-                        </span>
-                        <div class="company-container">
-                            Placed at <img class="codess-company" src="images/logos/citi.png">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 card-container">
-                    <div class="card">
-                        <div class="row" style="display: flex">
-                            <img src="images/codess/8.jpg" class="codess-img">
-                            <div>
-                                <span class="codess-name">Joshika</span><br>
-                                <span class="codess-college">CSE, IIT Patna</span>
-                            </div>
-                            <div style="flex-grow: 1">
-                                <img class="tag" src="images/tag.png">
-                            </div>
-                        </div>
-                        <span class="review">
-                                It taught me a lot on how to develop further. Thankyou so
-                            much for your guidance. I got to learn a lot, and improve
-                            upon my shortcomings.
-                        </span>
-                        <div class="company-container">
-                            Placed at <img class="codess-company" src="images/logos/publicis.png">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 card-container">
-                    <div class="card">
-                        <div class="row" style="display: flex">
-                            <img src="images/codess/9.jpg" class="codess-img">
-                            <div>
-                                <span class="codess-name">Sanskriti Singhal</span><br>
-                                <span class="codess-college">SE, DTU</span>
-                            </div>
-                            <div style="flex-grow: 1">
-                                <img class="tag" src="images/tag.png">
-                            </div>
-                        </div>
-                        <span class="review">
-                                Being able to get quick guidance was really helpful.
-                            I also received the opportunity to contribute back as a
-                            mentor now which is amazing.
-                        </span>
-                        <div class="company-container">
-                            Placed at <img class="codess-company" src="images/logos/google.png">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 card-container">
-                    <div class="card">
-                        <div class="row" style="display: flex">
-                            <img src="images/codess/10.jpg" class="codess-img">
-                            <div>
-                                <span class="codess-name">Aeshna Jain</span><br>
-                                <span class="codess-college">IT, IGDTUW</span>
-                            </div>
-                            <div style="flex-grow: 1">
-                                <img class="tag" src="images/tag.png">
-                            </div>
-                        </div>
-                        <span class="review">
-                                It is a place of wholesome prep. From mock interviews to
-                            personal review on resume, you get every necessary insight of interview
-                            preparation. The community is great and the mantra here is to ace interviews
-                            and our mentor Aarnav helps us achieve it no matter what !
-                        </span>
-                        <div class="company-container">
-                            Placed at <img class="codess-company" src="images/logos/microsoft.png">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 card-container">
-                    <div class="card">
-                        <div class="row" style="display: flex">
-                            <img src="images/codess/11.jpg" class="codess-img">
-                            <div>
-                                <span class="codess-name">Navpreet Kaur</span><br>
-                                <span class="codess-college">CSE, IGDTUW</span>
-                            </div>
-                            <div style="flex-grow: 1">
-                                <img class="tag" src="images/tag.png">
-                            </div>
-                        </div>
-                        <span class="review">
-                                To clear interviews you need to work on personality, resume, core subjects
-                            and coding. I received all this guidance from Aarnav sir. Apart from prep material
-                            and mock interviews he always motivated me to remain calm and focus despite failures.
-                            It's an amazing program and you will gain something after connecting with this community.
-                        </span>
-                        <div class="company-container">
-                            Placed at <img class="codess-company" src="images/logos/adobe.png">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 card-container">
-                    <div class="card">
-                        <div class="row" style="display: flex">
-                            <img src="images/codess/12.jpg" class="codess-img">
-                            <div>
-                                <span class="codess-name">Shreya Prasad</span><br>
-                                <span class="codess-college">CSE, IGDTUW</span>
-                            </div>
-                            <div style="flex-grow: 1">
-                                <img class="tag" src="images/tag.png">
-                            </div>
-                        </div>
-                        <span class="review">
-                                I was a part of the Codess.Cafe programme, which is an initiative by Aarnav Jindal
-                                to help and guide women in tech. The programme helped me a lot during my internship
-                                season and helped me bag an internship at Amazon. A big thank you to Aarnav for this
-                                amazing programme and for being a wonderful mentor! He guided and supported me,
-                                reviewed my resume,  took my mock interview, and helped me realize my strengths
-                                and weaknesses. He would conduct weekly session to monitor the progress of the girls
-                                in this programme and that helped us to set weekly goals and targets. Codess.Cafe is
-                                a wonderful initiative by Aarnav Jindal for girls!!
-                        </span>
-                        <div class="company-container">
-                            Placed at <img class="codess-company" src="images/logos/bny.png">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 card-container">
-                    <div class="card">
-                        <div class="row" style="display: flex">
-                            <img src="images/codess/13.jpg" class="codess-img">
-                            <div>
-                                <span class="codess-name">Manpreet Kaur</span><br>
-                                <span class="codess-college">CSE, IGDTUW</span>
-                            </div>
-                            <div style="flex-grow: 1">
-                                <img class="tag" src="images/tag.png">
-                            </div>
-                        </div>
-                        <span class="review">
-                                I was a part of codess.cafe mentorship. It was a great experience. The weekly sessions were
-                            amazing. All the doubts were cleared and also Interview experience of top product based companies
-                            was shared. Mock interviews were also helpful. You can connect with other mentees who are from
-                            different colleges.
-                            I would recommend all the girls who are in a dilemma of how to prepare and what to do for their
-                            upcoming internships or placements should join.
-                        </span>
-                        <div class="company-container">
-                            Placed at <img class="codess-company" src="images/logos/thoughtworks.png">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 card-container">
-                    <div class="card">
-                        <div class="row" style="display: flex">
-                            <img src="images/codess/14.jpg" class="codess-img">
-                            <div>
-                                <span class="codess-name">Mansi Aggarwal</span><br>
-                                <span class="codess-college">IT, IGDTUW</span>
-                            </div>
-                            <div style="flex-grow: 1">
-                                <img class="tag" src="images/tag.png">
-                            </div>
-                        </div>
-                        <span class="review">
-                                If I had to best describe Codess.Cafe, I would say, I am a part of this small but
-                            thriving community of extremely smart women, who with the help of our talented mentor
-                            Aarnav Jindal are pushing our boundaries to become better at what we do. The idea is
-                            to throw away any inhibitions and doubts one has about herself, and look beyond what
-                            we've been told always by the society. The very streamlined nature of the material
-                            shared by Aarnav sir does exactly that! I am very grateful to be a part of this program.
-                        </span>
-                        <div class="company-container">
-                            Placed at <img class="codess-company" src="images/logos/adobe.png">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 card-container">
-                    <div class="card">
-                        <div class="row" style="display: flex">
-                            <img src="images/codess/15.jpg" class="codess-img">
-                            <div>
-                                <span class="codess-name">Himabindu</span><br>
-                                <span class="codess-college">CSE, DTU</span>
-                            </div>
-                            <div style="flex-grow: 1">
-                                <img class="tag" src="images/tag.png">
-                            </div>
-                        </div>
-                        <span class="review">
-                                Codess cafe is a place of wholesome preparation for your interviews.
-                            From getting an opportunity to give mock interviews to having a personal
-                            review of your resume, you get every insight of interview preparation. It
-                            is a community where people share opportunities and help each other go.
-                            The mantra here is to ace interviews and out Mentor Aarnav helps us achieve
-                            it come what may!
-                        </span>
-                        <div class="company-container">
-                            Placed at <img class="codess-company" src="images/logos/adobe.png">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 card-container">
-                    <div class="card">
-                        <div class="row" style="display: flex">
-                            <img src="images/codess/16.jpg" class="codess-img">
-                            <div>
-                                <span class="codess-name">Muskan  Verma</span><br>
-                                <span class="codess-college">CSE, IGDTUW</span>
-                            </div>
-                            <div style="flex-grow: 1">
-                                <img class="tag" src="images/tag.png">
-                            </div>
-                        </div>
-                        <span class="review">
-                                Thank you for such a program. You are actually going great.
-                            This is actually of great help to someone who needs guidance.
-                        </span>
-                        <div class="company-container">
-                            Placed at <img class="codess-company" src="images/logos/walmart.png">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 card-container">
-                    <div class="card">
-                        <div class="row" style="display: flex">
-                            <img src="images/codess/17.jpg" class="codess-img">
-                            <div>
-                                <span class="codess-name">Krati  Garg</span><br>
-                                <span class="codess-college">CSE, DTU</span>
-                            </div>
-                            <div style="flex-grow: 1">
-                                <img class="tag" src="images/tag.png">
-                            </div>
-                        </div>
-                        <span class="review">
-                                Getting the right guidance at the right time is really important and
-                            I am grateful to get is from Aarnav Jindal  under this program. He not
-                            only guided me but also took mock interviews which boosted my confidence
-                            and gave me a chance to analyse and improve and He always helped me in
-                            staying positive even after rejections. Thanks Aarnav and Codess.Cafe.
-                        </span>
-                        <div class="company-container">
-                            Placed at <img class="codess-company" src="images/logos/google.png">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 card-container">
-                    <div class="card">
-                        <div class="row" style="display: flex">
-                            <img src="images/codess/18.jpg" class="codess-img">
-                            <div>
-                                <span class="codess-name">Nishtha  Goyal</span><br>
-                                <span class="codess-college">IT, IGDTUW</span>
-                            </div>
-                            <div style="flex-grow: 1">
-                                <img class="tag" src="images/tag.png">
-                            </div>
-                        </div>
-                        <span class="review">
-                                Thankyou Aarnav. You have been a great source of inspiration
-                            and guidance for me.
-                        </span>
-                        <div class="company-container">
-                            Placed at <img class="codess-company" src="images/logos/google.png">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 card-container">
-                    <div class="card">
-                        <div class="row" style="display: flex">
-                            <img src="images/codess/19.jpg" class="codess-img">
-                            <div>
-                                <span class="codess-name">Nistha  Gupta</span><br>
-                                <span class="codess-college">IT, MAIT</span>
-                            </div>
-                            <div style="flex-grow: 1">
-                                <img class="tag" src="images/tag.png">
-                            </div>
-                        </div>
-                        <span class="review">
-                                Thanks for the guidance. It was a great program.
-                            And I highly recommend it for anyone trying to get a great
-                            job in the tech sector.
-                        </span>
-                        <div class="company-container">
-                            Placed at <img class="codess-company" src="images/logos/morganstanley.png">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 card-container">
-                    <div class="card">
-                        <div class="row" style="display: flex">
-                            <img src="images/codess/20.jpg" class="codess-img">
-                            <div>
-                                <span class="codess-name">Tarusi  Mittal</span><br>
-                                <span class="codess-college">CSE, IIT Patna</span>
-                            </div>
-                            <div style="flex-grow: 1">
-                                <img class="tag" src="images/tag.png">
-                            </div>
-                        </div>
-                        <span class="review">
-                                It taught me a lot on how to develop further. Thankyou so
-                            much for your guidance. I got to learn a lot, and improve
-                            upon my shortcomings.
-                        </span>
-                        <div class="company-container">
-                            Placed at <img class="codess-company" src="images/logos/google.png">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 card-container">
-                    <div class="card">
-                        <div class="row" style="display: flex">
-                            <img src="images/codess/21.jpg" class="codess-img">
-                            <div>
-                                <span class="codess-name">Rhea  Sharma</span><br>
-                                <span class="codess-college">CSE, NIT Agartala</span>
-                            </div>
-                            <div style="flex-grow: 1">
-                                <img class="tag" src="images/tag.png">
-                            </div>
-                        </div>
-                        <span class="review">
-                                Being able to get quick guidance was really helpful.
-                            I also received the opportunity to contribute back as a
-                            mentor now which is amazing.
-                        </span>
-                        <div class="company-container">
-                            Placed at <img class="codess-company" src="images/logos/intuit.jpg">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 card-container">
-                    <div class="card">
-                        <div class="row" style="display: flex">
-                            <img src="images/codess/22.jpg" class="codess-img">
-                            <div>
-                                <span class="codess-name">Najma  Mahabub</span><br>
-                                <span class="codess-college">CSE, IIT Indore</span>
-                            </div>
-                            <div style="flex-grow: 1">
-                                <img class="tag" src="images/tag.png">
-                            </div>
-                        </div>
-                        <span class="review">
-                                To clear interviews you need to work on personality, resume, core subjects
-                            and coding. I received all this guidance from Aarnav sir. Apart from prep material
-                            and mock interviews he always motivated me to remain calm and focus despite failures.
-                            It's an amazing program and you will gain something after connecting with this community.
-                        </span>
-                        <div class="company-container">
-                            Placed at <img class="codess-company" src="images/logos/visa.png">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div>
-    <div id="apply">
-        <div class="container" style="padding: 5%">
-            <div class="row">
-                <div class="col-lg-12" style="padding-top: 3%">
-                    <h1 class="text-center" style="font-size: 50px">Apply</h1>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12" style="padding-bottom: 3%;">
-                <h1 class="text-center" style="font-size: 25px">We release forms regularly on LinkedIn to take new members</h1>
-                <h1 class="text-center" style="font-size: 25px">We have two intake programs depending on your year of study</h1>
-            </div>
-            <div class="col-lg-12" style="padding-bottom: 3%;">
-                <h1 class="text-center" style="font-size: 20px">Codess.Cafe : For 3rd, 4th and 5th year students</h1>
-                <h2 class="text-center" style="font-size: 20px">Applications releasing in May</h2>
-                <br/>
-                <h1 class="text-center" style="font-size: 20px">Codess.Cafe Sophomore: For 2nd year students</h1>
-                <h2 class="text-center" style="font-size: 20px">Applications releasing in May</h2>
-            </div>
-        </div>
-    </div>
-</div>
-<footer id="contact" class="bg-main" style="margin-top: 40px; padding-top: 50px;padding-bottom: 20px;background-image: url(images/map.png);">
-    <div class="container" style="padding-left: 20px;padding-right: 20px">
-        <div class="row">
-            <div class="col-lg-4">
-                <h5><b>Coddess.Cafe</b></h5>
-                <p>Pro-bono mentorship by Aarnav Jindal for collegiate women in tech, helping them unlock their true potential.</p>
-            </div>
-            <div class="col-lg-1"></div>
-            <div class="col-lg-3">
-                <h5><b>CONTACT</b></h5>
-                <div>
-                    <i class="fa fa-lg fa-globe"></i>
-                    <a href="http://aarnavjindal.in" style="color: black">About me</a>
-                </div>
-                <div>
-                    <i class="fa fa-md fa-envelope"></i>
-                    <a href="mailto: aarnavjindal1000@gmail.com" style="color: black">Connect over email</a>
-                </div>
-            </div>
-            <div class="col-lg-1"></div>
-            <div class="col-lg-3">
-                <h5><b>Media Links</b></h5>
-                <div>
-                    <i class="fa fa-lg fa-linkedin-square"></i>
-                    <a href="https://www.linkedin.com/company/codesscafe/" style="color: black">Linkedin link</a>
-                </div>
-                <div>
-                    <i class="fa fa-lg fa-user"></i>
-                    <a href="https://www.linkedin.com/in/aarnavjindal/" style="color: black">Aarnav Jindal</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
-</body>
+         </div>
+         <hr>
+         <p class="text-center text-white-50 mt-5"> ©2021 Codess.Cafe. All rights reserved </p>
+      </section>
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+         crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+         crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+         crossorigin="anonymous"></script>      
+   </body>
 </html>
