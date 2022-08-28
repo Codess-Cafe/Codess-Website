@@ -1,309 +1,495 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!---Favicon-->
+    <link rel="icon" type="image/png" href="images/logo.png" />
+    <!-----------------------w3-CSS------------------------------------->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="w3.css" />
 
-<head>
-   <meta charset="UTF-8" />
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <!---Favicon-->
-   <link rel="icon" type="image/png" href="images/logo.png" />
-   <!-- Bootstrap CSS -->
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
-   <!--Custom CSS-->
-   <link rel="stylesheet" href="style.css" />
-   <link rel="stylesheet" href="custom.css" />
-   <!---FontAwesome-->
-   <script src="https://use.fontawesome.com/2445c4adc5.js"></script>
-   <!-- Google Font -->
-   <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet" />
-   <title>Codess.Cafe | Pro-bono mentorship program for women in tech</title>
-   <meta property="og:url" content="http://codess.cafe">
-   <meta property="og:type" content="website">
-   <meta property="og:title" content="Codess.Cafe - Pro-bono mentorship program for women in tech">
-   <meta property="og:description" content="Come be a part of a vibrant community of growth oriented women in tech">
-   <meta property="og:image" content="http://prateknarang.com/images/DSAIcon.png">
-   <style type="text/css">
+    <!-------------------------css bootstrap cdn------------------------>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!---------------------------css stylesheet------------------------------->
+    <link rel="stylesheet" href="bootstrap-dist/css/style.css" />
+    <link rel="icon" href="images/logo.png" />
+
+    <!------------fontawesome cdn----------------->
+    <script
+      src="https://kit.fontawesome.com/61024fa0a4.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!------------------jquery/js bootstrap cdn---------------------->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="custom.css" />
+    <!---FontAwesome-->
+    <script src="https://use.fontawesome.com/2445c4adc5.js"></script>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700"
+      rel="stylesheet"
+    />
+    <title>Codess.Cafe | Pro-bono mentorship program for women in tech</title>
+    <meta property="og:url" content="http://codess.cafe" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Codess.Cafe - Pro-bono mentorship program for women in tech"
+    />
+    <meta
+      property="og:description"
+      content="Come be a part of a vibrant community of growth oriented women in tech"
+    />
+    <meta
+      property="og:image"
+      content="http://prateknarang.com/images/DSAIcon.png"
+    />
+    <style type="text/css">
       .announcement {
-         background-color: #7ac25b;
-         /*#7ac25b;*/
+        background-color: #7ac25b;
+        /*#7ac25b;*/
       }
 
       .announcement a {
-         color: white;
-         text-decoration: none;
-         font-weight: 1000;
-         font-size: 1.2em;
+        color: white;
+        text-decoration: none;
+        font-weight: 1000;
+        font-size: 1.2em;
       }
 
       .announcement a span {
-         color: yellow;
-         ;
+        color: yellow;
       }
-   </style>
-   <!-- Google Tag Manager -->
-   <script>
+    </style>
+    <!-- Google Tag Manager -->
+    <script>
       (function (w, d, s, l, i) {
-         w[l] = w[l] || []; w[l].push({
-            'gtm.start':
-               new Date().getTime(), event: 'gtm.js'
-         }); var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-               'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-      })(window, document, 'script', 'dataLayer', 'GTM-MJTJ4NT');
-   </script>
-   <!-- End Google Tag Manager -->
-</head>
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-MJTJ4NT");
+    </script>
+    <!-- End Google Tag Manager -->
+  </head>
 
-<body>
-   <!-- Google Tag Manager (noscript) -->
-   <noscript>
-      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJTJ4NT" height="0" width="0"
-         style="display:none;visibility:hidden"></iframe>
-   </noscript>
-   <!-- End Google Tag Manager (noscript) -->
-   <!-- <div class="whatsapp">
-         <a href="https://wa.me/918947050005" target="_blank">
-         <img src="./images/whatsapp.png">
-         </a>
-         </div> -->
-   <!-- <div class="p-3 text-center announcement">
-         <a href="#course_gallery">
-         	October Sale is ON 🔥 - Grab all courses @ Rs. 490/ -
-         Courses now available at Rs. 490 🎉🎉, Coupon Code: "OCT490" 🔥
-         </a>
-         <a href="./python-programming-master-course.html"> Must awaited Python Programming Master course is live.
-         	Check course page for Latest coupons.🔥
-         	 <span> Grab early bird offer at Rs. 360/-</span> 🔥
-         	</a>
-         </div> -->
-   <!-- Bootstrap JavaScript -->
-   <section id="cover-banner" class="w-100">
-      <!--Responsive Navbar-->
-      <nav class="navbar navbar-expand-md navbar-dark bg-transparent">
-         <div class="container">
-            <a class="navbar-brand" href="./index.html">
-               <img src="./images/logo.gif" height="80" />
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-MJTJ4NT"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe>
+    </noscript>
+<!-- scroll up  -->
+
+    <div class="scroll-up-btn">
+      <i class="fas fa-angle-up"></i>
+  </div>
+
+    <div class="container-overall">
+      <section id="cover-banner" class="w-100">
+        <div class="container-nav" id="home">
+          <!-- Nav Bar -->
+          <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="index.html">
+              <img src="./images/logo.gif" height="80" alt="" />
             </a>
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#cmnavbar2">
-               <span class="navbar-toggler-icon"></span>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="cmnavbar2">
-               <ul class="navbar-nav ml-auto">
-                  <button class="btn btn-move btn-white md-3 font-weight-bold" onclick="location.href='#apply'">
-                     Join the Community
-                  </button>
-               </ul>
-            </div>
-         </div>
-      </nav>
-      <!--Cover Text and Graphic-->
-      <div class="container">
-         <div class="row justify-content-between align-items-center py-5">
-            <div class="col md-6">
-               <h1 class="display-4 heading font-weight-bold">
-                  Community of <br />Empowered <br />
-                  Women in Tech
-               </h1>
-               <p class="lead d-none d-md-block">
-                  Come be a part of a vibrant community of high achieving, growth oriented women in tech.
-               </p>
-            </div>
-            <div class="col mt-5 sm-3 md-6 self-align-bottom text-right">
-               <img src="images/banner.png" class="girl" />
-            </div>
-         </div>
-      </div>
-      <div class="container" style="padding-top: 75px; padding-bottom: 75px;">
-         <div class="row">
-            <a href="#about" class="nav-icons col-md-3 col-lg-2">
-               <img src="images/about.png" class="nav-icon-img">
-               <h4 class="tpf-h4 hero-initiative-title">About</h4>
-            </a>
-            <a href="#offerings" class="nav-icons col-md-3 col-lg-2">
-               <img src="images/offerings.png" class="nav-icon-img">
-               <h4 class="tpf-h4 hero-initiative-title">Offerings</h4>
-            </a>
-            <a href="#testimonials" class="nav-icons col-md-3 col-lg-2">
-               <img src="images/testimonials.png" class="nav-icon-img">
-               <h4 class="tpf-h4 hero-initiative-title">Testimonials</h4>
-            </a>
-            <a href="#team" class="nav-icons col-md-3 col-lg-2">
-               <img src="images/team.png" class="nav-icon-img">
-               <h4 class="tpf-h4 hero-initiative-title">Team</h4>
-            </a>
-            <a href="#apply" class="nav-icons col-md-3 col-lg-2">
-               <img src="images/apply.png" class="nav-icon-img">
-               <h4 class="tpf-h4 hero-initiative-title">Apply</h4>
-            </a>
-            <a href="#footer" class="nav-icons col-md-3 col-lg-2">
-               <img src="images/contact.png" class="nav-icon-img">
-               <h4 class="tpf-h4 hero-initiative-title">Contact</h4>
-            </a>
-         </div>
-      </div>
-   </section>
 
-   <section id="about" class="container py-5">
-      <div class="row justify-content-center">
-         <div class="container">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">      
+                 
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                 
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                 
+                  <a class="nav-link" href="#offerings">Offerings</a>
+                </li>
+                <li class="nav-item">
+                  
+                  <a class="nav-link" href="#testimonials">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                 
+                  <a class="nav-link" href="#team">Team</a>
+                </li>
+               
+                <li class="nav-item">
+                  <!-- <button class="btn btn-move btn-white md-3 font-weight-bold" onclick="location.href='#apply'">
+                    Apply
+                 </button> -->
+                  <a class="nav-link" href="#apply">Apply</a>
+                </li>
+                
+                <li class="nav-item">
+                   
+                  <a class="nav-link" href="#footer">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+
+        <!-- social side bar -->
+        <nav class="social">
+          <ul>
+            <li>
+              <a href="twitter.html"
+                >Twitter <i class="fa fa-twitter twitter social_icons"></i
+              ></a>
+            </li>
+            <li>
+              <a href="linkedin.html"
+                >LinkedIn <i class="fa fa-linkedin social_icons"></i
+              ></a>
+            </li>
+            <li>
+              <a href="medium.html"
+                >Medium <i class="fa fa-medium social_icons"></i
+              ></a>
+            </li>
+            <li>
+              <a href="youtube.html"
+                >Youtube <i class="fa fa-youtube social_icons"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="" id="title">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="big-heading-text col-lg-6">
+                <h1 class="big-heading">
+                  Community of Empowered Women in Tech
+                </h1>
+                <h5 class="big-heading">
+                  Come be a part of a vibrant community of high achieving,
+                  growth oriented women in tech.
+                </h5>
+              </div>
+
+              <div class="col-lg-6">
+                <img
+                  class="title-img"
+                  src="images/title-logo.png"
+                  alt="iphone-mockup"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="py-5">
+        <div class="row justify-content-center">
+          <div class="container">
             <div class="row justify-content-between align-items-center py-5">
-               <div class="col-md-6">
-                  <img src="images/about-banner2.png" style="width: 100%;" />
-               </div>
-               <div class="col-md-6">
-                  <h1 class="display-4 heading font-weight-bold">
-                     Mentorship Matters
-                  </h1>
-                  <p class="lead d-none d-md-block">
-                     <br>
-                     There's a myriad of information out there. A mentor helps navigate the complexities of life and
-                     find the best path based on your long term goals.
-                     <br><br>
-                     We helped our mentees get placed in organisations like Google, Microsoft, Amazon, Bloomberg,
-                     ByteDance, Adobe, Goldman Sachs, Intuit, Flipkart, Visa, Walmart, Arcesium, DE Shaw, Postman,
-                     Accenture, Myntra, Paytm etc.
+              <div class="col-md-6">
+                <img
+                  src="images/about-banner2.png"
+                  style="width: 100%"
+                  alt=""
+                />
+              </div>
+              <div class="col-md-6 about-subtitle">
+                <h1 class="display-4 heading font-weight-bold">
+                  Mentorship Matters
+                </h1>
+                <span class="lead d-none d-md-block">
+                  <br />
+                  There's a myriad of information out there. A mentor helps
+                  navigate the complexities of life and find the best path based
+                  on your long term goals.
+                  <br /><br />
+                  We helped our mentees get placed in organisations like Google,
+                  Microsoft, Amazon, Bloomberg, ByteDance, Adobe, Goldman Sachs,
+                  Intuit, Flipkart, Visa, Walmart, Arcesium, DE Shaw, Postman,
+                  Accenture, Myntra, Paytm etc.
+                </span>              
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="offerings" class="">
+        <div class="container-fluid py-5" id="course-banner">
+          
+
+          <h1 class="display-5 text-center text-light">Program Offerings</h1>
+          <h5 class="text-center text-light">
+            We focus on all round development to make you interview ready 👩🏻‍💻
+          </h5>
+          <div class="container">
+            <div class="row mt-5" style="margin-bottom: 100px">
+              <div class="col-lg-2 col-6 text-light text-center p-3">
+                <i class="fa fa-code fa-3x" aria-hidden="true"></i>
+                <p class="text-light">Rigorous Coding Practice</p>
+              </div>
+              <div class="col-lg-2 col-6 text-light text-center p-3">
+                <i class="fa fa-headphones fa-3x" aria-hidden="true"></i>
+                <p class="text-light">Regular Mock Interviews</p>
+              </div>
+              <div class="col-lg-2 col-6 text-light text-center p-3">
+                <i class="fa fa-users fa-3x" aria-hidden="true"></i>
+                <p class="text-light">Scholarship prep sessions</p>
+              </div>
+              <div class="col-lg-2 col-6 text-light text-center p-3">
+                <i class="fa fa-line-chart fa-3x" aria-hidden="true"></i>
+                <p class="text-light">Weekly Progress Tracking</p>
+              </div>
+              <div class="col-lg-2 col-6 text-light text-center p-3">
+                <i class="fa fa-rocket fa-3x" aria-hidden="true"></i>
+                <p class="text-light">Career<br />counseling</p>
+              </div>
+
+              <div class="col-lg-2 col-6 text-light text-center p-3">
+                <i class="fa fa-diamond fa-3x" aria-hidden="true"></i>
+                <p class="text-light">Premium<br />Community</p>
+              </div>
+            </div>
+            <!-- upcoming chapters -->
+          <div class="row">
+            <div class="slide-container col-md-4">
+              <div class="slide-card">
+                <img height="180px" width="100%" src="https://i.pinimg.com/originals/23/eb/fd/23ebfd01ad58d6354f5be87002476bec.jpg">
+                <h5>Bangladesh Chapter</h5>
+                <h6>Program led by Kulsum Siddique<br><br></h6>
+              </div>
+            </div>
+            <div class="slide-container col-md-4">
+              <div class="slide-card">
+                <img height="180px" width="100%" src="https://wallpapercave.com/wp/wp2666764.jpg">
+                <h5>India Chapter</h5>
+                <h6>Program led by Kirti Dabas<br><br></h6>
+              </div>
+            </div>
+            <div class="slide-container col-md-4">
+              <div class="slide-card">
+                <img height="180px" width="100%" src="https://media.istockphoto.com/photos/nepal-picture-id530450181?k=20&m=530450181&s=612x612&w=0&h=M3BJ109SP25XKUj2ucPbEN9tp6v_C7m2JFmEzz6VVws=">
+                <h5>Nepal Chapter</h5>
+                <h6>Program led by Bhumi Malla & Sumee Adhikari</h6>
+              </div>
+            </div>
+            <!-- <div class="slide-card col-md-4">
+              <div class="slide2">
+                <h3>India Chapter</h3>
+                <h5>Program led by Riya Dev Varshney and Kirti Dabas</h5>
+              </div>
+            </div>
+            <div class="slide-card col-md-4">
+              <div class="slide3">
+                <h3>Nepal Chapter</h3>
+                <h5>Program led by Bhumi Malla and Sumee Adhikari</h5>
+              </div>
+            </div> -->
+          </div>
+          <!-- upcoming chapters end -->
+          <br><br><br>   
+          </div>
+          </div>
+          <div class="container">
+            <div class="row justify-content-between no-gutters">
+              <div
+                class="circle row justify-content-center udemy-perk-logo-container"
+              >
+                <img
+                  class="img-fluid udemy-perk-logo"
+                  src="images/c++.svg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="circle row justify-content-center udemy-perk-logo-container"
+                style="margin-top: -140px"
+              >
+                <img
+                  src="images/python.svg"
+                  class="img-fluid udemy-perk-logo"
+                  alt=""
+                />
+              </div>
+              <div
+                class="circle row justify-content-center udemy-perk-logo-container"
+              >
+                <img
+                  src="images/java.svg"
+                  class="img-fluid udemy-perk-logo"
+                  alt=""
+                />
+              </div>
+              <div
+                class="circle row justify-content-center udemy-perk-logo-container"
+                style="margin-top: -140px"
+              >
+                <img
+                  src="images/brain.svg"
+                  class="img-fluid udemy-perk-logo"
+                  alt=""
+                />
+              </div>
+              <div
+                class="circle row justify-content-center udemy-perk-logo-container"
+              >
+                <img
+                  src="images/js.svg"
+                  class="img-fluid udemy-perk-logo"
+                  alt=""
+                />
+              </div>
+            </div>
+        </div>
+
+      
+      </section>
+
+      <section id="testimonials" class="my-1">
+        <div class="container text-center">
+          <!-- <h1 class="display-6 text-center font-weight-bold mt-5">Code your dream job with us</h1> -->
+          <h1 class="display-6 text-muted mt-5">What do our students say?</h1>
+          <div class="row">
+            <div class="col-md-4 mb-md-0 mb-4">
+              <div class="card-testimonials">
+                <div class="card-body">
+                  <h5 class="card-title bold6">
+                    <strong>Navpreet Kaur</strong>
+                  </h5>
+                  <div
+                    class="row px-3 justify-content-center align-items-center"
+                  >
+                    <p class="card-text mb-0">
+                      <img class="pb-1" src="images/star_filled.svg" alt="" />
+                      <img class="pb-1" src="images/star_filled.svg" alt="" />
+                      <img class="pb-1" src="images/star_filled.svg" alt="" />
+                      <img class="pb-1" src="images/star_filled.svg" alt="" />
+                      <img class="pb-1" src="images/star_filled.svg" alt="" />
+                    </p>
+                  </div>
+                  <p class="mt-2">
+                    Codess cafe is a place of wholesome preparation for your
+                    interviews. From getting an opportunity to give mock
+                    interviews to having a personal review of your resume, you
+                    get every insight of interview preparation. It is a
+                    community where people share opportunities and help each
+                    other go. The mantra here is to ace interviews and out
+                    Mentor Aarnav helps us achieve it come what may!
                   </p>
-               </div>
-            </div>
-         </div>
-      </div>
-   </section>
-
-   <section id="offerings">
-      <div class="container-fluid py-5" id="course-banner">
-         <h1 class="display-5 text-center text-light">
-            Program Offerings
-         </h1>
-         <h5 class="text-center text-light">We focus on all round development to make you interview ready 👩🏻‍💻</h5>
-         <div class="container">
-            <div class="row mt-5" style="margin-bottom: 100px;">
-               <div class="col-lg-2 col-6 text-light text-center p-3">
-                  <i class="fa fa-code fa-3x" aria-hidden="true"></i>
-                  <p class="text-light">Rigorous Coding Practice</p>
-               </div>
-               <div class="col-lg-2 col-6 text-light text-center p-3">
-                  <i class="fa fa-headphones fa-3x" aria-hidden="true"></i>
-                  <p class="text-light">Regular Mock Interviews</p>
-               </div>
-               <div class="col-lg-2 col-6 text-light text-center p-3">
-                  <i class="fa fa-users fa-3x" aria-hidden="true"></i>
-                  <p class="text-light">Scholarship prep sessions</p>
-               </div>
-               <div class="col-lg-2 col-6 text-light text-center p-3">
-                  <i class="fa fa-line-chart fa-3x" aria-hidden="true"></i>
-                  <p class="text-light">Weekly Progress Tracking</p>
-               </div>
-               <div class="col-lg-2 col-6 text-light text-center p-3">
-                  <i class="fa fa-rocket fa-3x" aria-hidden="true"></i>
-                  <p class="text-light">Career<br>counseling</p>
-               </div>
-
-               <div class="col-lg-2 col-6 text-light text-center p-3">
-                  <i class="fa fa-diamond fa-3x" aria-hidden="true"></i>
-                  <p class="text-light">Premium<br>Community</p>
-               </div>
-            </div>
-            <br>
-            <!--<div class="row justify-content-center mt-5">
-                  <button class="btn btn-move btn-outline text-white px-5"> <i class="fa fa-tv"></i> &nbsp; Sign up for Early Bird Access!</button>
-                  </div>-->
-         </div>
-      </div>
-      <div class="container">
-         <div class="row justify-content-between no-gutters">
-            <div class="circle row justify-content-center udemy-perk-logo-container">
-               <img class="img-fluid udemy-perk-logo" src="images/c++.svg">
-            </div>
-            <div class="circle row justify-content-center udemy-perk-logo-container" style="margin-top: -140px;">
-               <img src="images/python.svg" class="img-fluid udemy-perk-logo">
-            </div>
-            <div class="circle row justify-content-center udemy-perk-logo-container">
-               <img src="images/java.svg" class="img-fluid udemy-perk-logo">
-            </div>
-            <div class="circle row justify-content-center udemy-perk-logo-container" style="margin-top: -140px;">
-               <img src="images/brain.svg" class="img-fluid udemy-perk-logo">
-            </div>
-            <div class="circle row justify-content-center udemy-perk-logo-container">
-               <img src="images/js.svg" class="img-fluid udemy-perk-logo">
-            </div>
-         </div>
-      </div>
-   </section>
-   <!-- ======== OUR STUDENTS ===========  -->
-   <section id="testimonials" class="my-1">
-      <div class="container text-center ">
-         <!-- <h1 class="display-6 text-center font-weight-bold mt-5">Code your dream job with us</h1> -->
-         <h1 class="display-6 text-muted mt-5">What do our students say?</h1>
-         <div class="row">
-            <div class="col-md-4 mb-md-0 mb-4">
-               <div class="card">
-                  <div class="card-body">
-                     <h5 class="card-title bold6"><strong>Navpreet Kaur</strong></h5>
-                     <div class="row px-3 justify-content-center align-items-center">
-                        <p class="card-text mb-0">
-                           <img class="pb-1" src="images/star_filled.svg" />
-                           <img class="pb-1" src="images/star_filled.svg" />
-                           <img class="pb-1" src="images/star_filled.svg" />
-                           <img class="pb-1" src="images/star_filled.svg" />
-                           <img class="pb-1" src="images/star_filled.svg" />
-                        </p>
-                     </div>
-                     <p class="mt-2">
-                        Codess cafe is a place of wholesome preparation for your interviews. From getting an opportunity
-                        to give mock interviews to having a personal review of your resume, you get every insight of
-                        interview preparation. It is a community where people share opportunities and help each other
-                        go. The mantra here is to ace interviews and out Mentor Aarnav helps us achieve it come what
-                        may! </p>
-                  </div>
-               </div>
+                </div>
+              </div>
             </div>
             <div class="col-md-4 mb-md-0 mb-4">
-               <div class="card">
-                  <div class="card-body">
-                     <h5 class="card-title bold6"><strong>Akanksha Tanwar</strong></h5>
-                     <div class="row px-3 justify-content-center align-items-center">
-                        <p class="card-text mb-0">
-                           <img class="pb-1" src="images/star_filled.svg" />
-                           <img class="pb-1" src="images/star_filled.svg" />
-                           <img class="pb-1" src="images/star_filled.svg" />
-                           <img class="pb-1" src="images/star_filled.svg" />
-                           <img class="pb-1" src="images/star_filled.svg" />
-                        </p>
-                     </div>
-                     <p class="mt-2">
-                        If I had to best describe Codess.Cafe, I would say, I am a part of this small but thriving
-                        community of extremely smart women, who with the help of our talented mentor Aarnav Jindal are
-                        pushing our boundaries to become better at what we do. The idea is to throw away any inhibitions
-                        and doubts one has about herself, and look beyond what we've been told always by the society.
-                        The very streamlined nature of the material shared by Aarnav sir does exactly that! I am very
-                        grateful to be a part of this program. </p>
+              <div class="card-testimonials">
+                <div class="card-body">
+                  <h5 class="card-title bold6">
+                    <strong>Akanksha Tanwar</strong>
+                  </h5>
+                  <div
+                    class="row px-3 justify-content-center align-items-center"
+                  >
+                    <p class="card-text mb-0">
+                      <img class="pb-1" src="images/star_filled.svg" alt="" />
+                      <img class="pb-1" src="images/star_filled.svg" alt="" />
+                      <img class="pb-1" src="images/star_filled.svg" alt="" />
+                      <img class="pb-1" src="images/star_filled.svg" alt="" />
+                      <img class="pb-1" src="images/star_filled.svg" alt="" />
+                    </p>
                   </div>
-               </div>
+                  <p class="mt-2">
+                    If I had to best describe Codess.Cafe, I would say, I am a
+                    part of this small but thriving community of extremely smart
+                    women, who with the help of our talented mentor Aarnav
+                    Jindal are pushing our boundaries to become better at what
+                    we do. The idea is to throw away any inhibitions and doubts
+                    one has about herself, and look beyond what we've been told
+                    always by the society. The very streamlined nature of the
+                    material shared by Aarnav sir does exactly that! I am very
+                    grateful to be a part of this program.
+                  </p>
+                </div>
+              </div>
             </div>
             <div class="col-md-4 mb-md-0 mb-4">
-               <div class="card">
-                  <div class="card-body">
-                     <h5 class="card-title bold6"><strong>Prachi Singhal</strong></h5>
-                     <div class="row px-3 justify-content-center align-items-center">
-                        <p class="card-text mb-0">
-                           <img class="pb-1" src="images/star_filled.svg" />
-                           <img class="pb-1" src="images/star_filled.svg" />
-                           <img class="pb-1" src="images/star_filled.svg" />
-                           <img class="pb-1" src="images/star_filled.svg" />
-                           <img class="pb-1" src="images/star_filled.svg" />
-                        </p>
-                     </div>
-                     <p class="mt-2">
-                        Getting the right guidance at the right time is really important and I am grateful to get is
-                        from Aarnav Jindal under this program. He not only guided me but also took mock interviews which
-                        boosted my confidence and gave me a chance to analyse and improve and He always helped me in
-                        staying positive even after rejections. Thanks Aarnav and Codess.Cafe. </p>
+              <div class="card-testimonials">
+                <div class="card-body">
+                  <h5 class="card-title bold6">
+                    <strong>Prachi Singhal</strong>
+                  </h5>
+                  <div
+                    class="row px-3 justify-content-center align-items-center"
+                  >
+                    <p class="card-text mb-0">
+                      <img class="pb-1" src="images/star_filled.svg" alt="" />
+                      <img class="pb-1" src="images/star_filled.svg" alt="" />
+                      <img class="pb-1" src="images/star_filled.svg" alt="" />
+                      <img class="pb-1" src="images/star_filled.svg" alt="" />
+                      <img class="pb-1" src="images/star_filled.svg" alt="" />
+                    </p>
                   </div>
-               </div>
+                  <p class="mt-2">
+                    Getting the right guidance at the right time is really
+                    important and I am grateful to get is from Aarnav Jindal
+                    under this program. He not only guided me but also took mock
+                    interviews which boosted my confidence and gave me a chance
+                    to analyse and improve and He always helped me in staying
+                    positive even after rejections. Thanks Aarnav and
+                    Codess.Cafe.
+                  </p>
+                </div>
+              </div>
             </div>
-         </div>
-      </div>
-      <div class="container-fluid mt-5" id="placement-banner">
+          </div>
+        </div>
+        <!-- <div class="container-fluid mt-5" id="placement-banner">
          <div class="container text-center">
             <h1 class="display-6 text-center font-weight-bold">Numbers Speak Louder</h1>
             <div class="row">
@@ -325,435 +511,313 @@
                   <h5>Avg CTC</h5>
                </div>
             </div>
-            <!--    <h5 class="display-6 text-center mt-5">Our Alumni Work at</h5>
-                  <div class="row justify-content-center mt">
-                      <img class="img-fluid udemy-perk-logo" src="images/company-strip.svg">
-                  </div> -->
          </div>
-      </div>
-   </section>
+      </div> -->
+      </section>
 
-   <section id="team" class="my-5">
-      <div class="container text-center">
-         <div class="row justify-content-center">
+      <section id="team" class="my-5 mentors-section">
+        <div class="container text-center">
+          <div class="row justify-content-center">
             <div class="col-12 mb-5">
-               <h1 class="display-6 text-center font-weight-bold">Meet the Team</h1>
-               <p class="lead">Meet our fabulous team of 10x mentors</p>
+              <h1 class="display-6 text-center font-weight-bold">
+                Meet the Team
+              </h1>
             </div>
             <div>
-               <div style="padding: 0 40px">
-                  <h3 class="text-left">Founders</h3>
-                  <div class="row">
-                     <div class="col-lg-4 col-md-6 mentor-card-container">
-                        <div class="card mentor-card-outer mentor-card">
-                           <div class="row" style="display: flex">
-                              <img src="images/mentor/14.jpg" class="mentor-img">
-                              <div>
-                                 <span class="mentor-name">Aarnav Jindal</span><br>
-                                 <span class="mentor-job">PM: Scaler</span><br>
-                                 <span class="mentor-college">CSE, DTU</span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-4 col-md-6 mentor-card-container">
-                        <div class="card mentor-card-outer mentor-card">
-                           <div class="row" style="display: flex">
-                              <img src="images/mentor/27.jpeg" class="mentor-img">
-                              <div>
-                                 <span class="mentor-name">Shriya Chhabra</span><br>
-                                 <span class="mentor-job">SDE: Adobe</span><br>
-                                 <span class="mentor-college">CSE, IGDTUW</span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
+              <div class="row">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-4 col-md-6 mentor-cards-home">
+                  <div class="card align-items-center">
+                    <div class="img-bx" style="display: flex">
+                      <img src="images/mentor/14.jpg" alt="img" />
+                    </div>
+                    <div class="content">
+                      <div class="detail">
+                        <h2>
+                          Aarnav Jindal<br /><h2
+                            >Founder<br />PM: Scaler | CSE, DTU</h2
+                          >
+                        </h2>
+                        <ul class="sci">
+                         
+                          <li>
+                            <a href="https://www.li÷nkedin.com/in/aarnavjindal/"></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
-                  <h3 class="text-left">Organisation Leads</h3>
-                  <div class="row">
-                     <div class="col-lg-4 col-md-6 mentor-card-container">
-                        <div class="card mentor-card-outer mentor-card">
-                           <div class="row" style="display: flex">
-                              <img src="images/mentor/5.jpg" class="mentor-img">
-                              <div>
-                                 <span class="mentor-name">Sanskriti Singhal</span><br>
-                                 <span class="mentor-job">SDE: Google</span><br>
-                                 <span class="mentor-college">SE, DTU</span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-4 col-md-6 mentor-card-container">
-                        <div class="card mentor-card-outer mentor-card">
-                           <div class="row" style="display: flex">
-                              <img src="images/mentor/38.jpeg" class="mentor-img">
-                              <div>
-                                 <span class="mentor-name">Ankita Saloni</span><br>
-                                 <span class="mentor-job">GDSC Lead, GGS APAC</span><br>
-                                 <span class="mentor-college">CSE, Dr. A.P.J. AKTU</span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-4 col-md-6 mentor-card-container">
-                        <div class="card mentor-card-outer mentor-card">
-                           <div class="row" style="display: flex">
-                              <img src="images/mentor/10.jpg" class="mentor-img">
-                              <div>
-                                 <span class="mentor-name">Kirti Dabas</span><br>
-                                 <span class="mentor-job">SDE Intern: Google</span><br>
-                                 <span class="mentor-college">CSE, DTU</span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mentor-cards-home">
+                  <div class="card">
+                    <div class="img-bx">
+                      <img src="images/mentor/27.jpeg" alt="img" />
+                    </div>
+                    <div class="content">
+                      <div class="detail">
+                        <h2>
+                          Shriya Chhabra<br /><h2
+                            >Founder<br />SDE: Adober | CSE, IGDTUW</h2
+                          >
+                        </h2>
+                        <ul class="sci">
+                         
+                          <li>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
-                  <h3 class="text-left">Open Source Leads</h3>
-                  <div class="row">
-                     <div class="col-lg-4 col-md-6 mentor-card-container">
-                        <div class="card mentor-card-outer mentor-card">
-                           <div class="row" style="display: flex">
-                              <img src="images/mentor/26.jpeg" class="mentor-img">
-                              <div>
-                                 <span class="mentor-name">Jyoti Bisht</span><br>
-                                 <span class="mentor-job">DevRel: Jina AI</span><br>
-                                 <span class="mentor-college">MLH Fellow'21</span>
-                              </div>
-                           </div>
+                </div>
+                <div class="col-lg-2"></div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 mentor-cards-home">
+                    <div class="card">
+                      <div class="img-bx">
+                        <img src="images/mentor/5.jpg" alt="img" />
+                      </div>
+                      <div class="content">
+                        <div class="detail">
+                          <h2>
+                            Sanskriti Singhal<br /><h2
+                              >Organization Lead <br />SDE: Google | SE, DTU</h2
+                            >
+                          </h2>
+                          <ul class="sci">
+                           
+                            <li>
+                              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                          </ul>
                         </div>
-                     </div>
+                      </div>
+                    </div>
                   </div>
-                  <h3 class="text-left">Editor-in-Chief</h3>
-                  <div class="row">
-                     <div class="col-lg-4 col-md-6 mentor-card-container">
-                        <div class="card mentor-card-outer mentor-card">
-                           <div class="row" style="display: flex">
-                              <img src="images/mentor/39.jpeg" class="mentor-img">
-                              <div>
-                                 <span class="mentor-name">Vidhi Bhatt</span><br>
-                                 <span class="mentor-job">Google WE Scholar '21</span><br>
-                                 <span class="mentor-college">CSE, GTU Ahmedabad</span>
-                              </div>
-                           </div>
+  
+                  <div class="col-lg-4 col-md-6 mentor-cards-home">
+                    <div class="card">
+                      <div class="img-bx">
+                        <img src="images/mentor/38.jpeg" alt="img" />
+                      </div>
+                      <div class="content">
+                        <div class="detail">
+                          <h2>
+                            Ankita Saloni<br /><h2
+                              >Organization Lead <br />GGS APAC | CSE, AKTU</h2
+                            >
+                          </h2>
+                          <ul class="sci">               
+                            <li>
+                              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                          </ul>
                         </div>
-                     </div>
+                      </div>
+                    </div>
                   </div>
-                  <h3 class="text-left">Sophomore Mentors</h3>
-                  <div class="row">
-                     <div class="col-lg-4 col-md-6 mentor-card-container">
-                        <div class="card mentor-card-outer mentor-card">
-                           <div class="row" style="display: flex">
-                              <img src="images/mentor/37.jpeg" class="mentor-img">
-                              <div>
-                                 <span class="mentor-name">Ankita Jain</span><br>
-                                 <!-- <span class="mentor-job">SDE Intern: Google</span><br> -->
-                                 <span class="mentor-college">MCE, DTU</span>
-                              </div>
-                           </div>
+  
+                  <div class="col-lg-4 col-md-6 mentor-cards-home">
+                    <div class="card">
+                      <div class="img-bx">
+                        <img src="images/mentor/10.jpg" alt="img" />
+                      </div>
+                      <div class="content">
+                        <div class="detail">
+                          <h2>
+                            Kirti Dabas<br /><h2
+                              >Organization Lead <br />SDE Intern: Google | CSE,
+                              DTU</h2
+                            >
+                          </h2>
+                          <ul class="sci">
+                           
+                            <li>
+                              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                          </ul>
                         </div>
-                     </div>
-                     <div class="col-lg-4 col-md-6 mentor-card-container">
-                        <div class="card mentor-card-outer mentor-card">
-                           <div class="row" style="display: flex">
-                              <img src="images/mentor/31.jpeg" class="mentor-img">
-                              <div>
-                                 <span class="mentor-name">Anshika Jain</span><br>
-                                 <!-- <span class="mentor-job">SDE Intern: Amazon</span><br> -->
-                                 <span class="mentor-college">CSE, DTU</span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-4 col-md-6 mentor-card-container">
-                        <div class="card mentor-card-outer mentor-card">
-                           <div class="row" style="display: flex">
-                              <img src="images/mentor/20.jpeg" class="mentor-img">
-                              <div>
-                                 <span class="mentor-name">Apeksha Manchanda</span><br>
-                                 <span class="mentor-job">SDE Intern: Google</span><br>
-                                 <span class="mentor-college">CSE, IGDTUW</span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-4 col-md-6 mentor-card-container">
-                        <div class="card mentor-card-outer mentor-card">
-                           <div class="row" style="display: flex">
-                              <img src="images/mentor/35.jpeg" class="mentor-img">
-                              <div>
-                                 <span class="mentor-name">Eesha Yadav</span><br>
-                                 <span class="mentor-job">SDE Intern: Google</span><br>
-                                 <span class="mentor-college">ECE, IIT Dhanbad</span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-4 col-md-6 mentor-card-container">
-                        <div class="card mentor-card-outer mentor-card">
-                           <div class="row" style="display: flex">
-                              <img src="images/mentor/30.jpeg" class="mentor-img">
-                              <div>
-                                 <span class="mentor-name">Ishita Mundhra</span><br>
-                                 <span class="mentor-job">SDE Intern: Amazon</span><br>
-                                 <span class="mentor-college">IT, Jadhav University</span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-4 col-md-6 mentor-card-container">
-                        <div class="card mentor-card-outer mentor-card">
-                           <div class="row" style="display: flex">
-                              <img src="images/mentor/21.jpeg" class="mentor-img">
-                              <div>
-                                 <span class="mentor-name">Kaushiki Raj</span><br>
-                                 <span class="mentor-job">SDE Intern: Microsoft</span><br>
-                                 <span class="mentor-college">MCA, BITS Mesra</span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-4 col-md-6 mentor-card-container">
-                        <div class="card mentor-card-outer mentor-card">
-                           <div class="row" style="display: flex">
-                              <img src="images/mentor/22.jpeg" class="mentor-img">
-                              <div>
-                                 <span class="mentor-name">Manasvi Singh</span><br>
-                                 <span class="mentor-job">SDE Intern: Microsoft</span><br>
-                                 <span class="mentor-college">CS & AI, IIITD</span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-4 col-md-6 mentor-card-container">
-                        <div class="card mentor-card-outer mentor-card">
-                           <div class="row" style="display: flex">
-                              <img src="images/mentor/23.jpeg" class="mentor-img">
-                              <div>
-                                 <span class="mentor-name">Navya Singla</span><br>
-                                 <span class="mentor-job">SDE Intern: Flipkart</span><br>
-                                 <span class="mentor-college">CSE, DTU</span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-4 col-md-6 mentor-card-container">
-                        <div class="card mentor-card-outer mentor-card">
-                           <div class="row" style="display: flex">
-                              <img src="images/mentor/33.jpeg" class="mentor-img">
-                              <div>
-                                 <span class="mentor-name">Neha Goyal</span><br>
-                                 <span class="mentor-job">Step Intern: Google</span><br>
-                                 <span class="mentor-college">CSE, DTU</span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-4 col-md-6 mentor-card-container">
-                        <div class="card mentor-card-outer mentor-card">
-                           <div class="row" style="display: flex">
-                              <img src="images/mentor/36.jpeg" class="mentor-img">
-                              <div>
-                                 <span class="mentor-name">Pranitha Sridhar</span><br>
-                                 <!-- <span class="mentor-job">SDE Intern: Google</span><br> -->
-                                 <span class="mentor-college">EE, IIT Dhanbad</span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-4 col-md-6 mentor-card-container">
-                        <div class="card mentor-card-outer mentor-card">
-                           <div class="row" style="display: flex">
-                              <img src="images/mentor/24.jpeg" class="mentor-img">
-                              <div>
-                                 <span class="mentor-name">Tanushree Bhattacharya</span><br>
-                                 <span class="mentor-job">SDE Intern: Microsoft</span><br>
-                                 <span class="mentor-college">ECE, NIT Durgapur</span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-4 col-md-6 mentor-card-container">
-                        <div class="card mentor-card-outer mentor-card">
-                           <div class="row" style="display: flex">
-                              <img src="images/mentor/34.jpeg" class="mentor-img">
-                              <div>
-                                 <span class="mentor-name">Tanvy Bhola</span><br>
-                                 <!-- <span class="mentor-job">Step Intern: Google</span><br> -->
-                                 <span class="mentor-college">CSE, AIT Pune</span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-4 col-md-6 mentor-card-container">
-                        <div class="card mentor-card-outer mentor-card">
-                           <div class="row" style="display: flex">
-                              <img src="images/mentor/32.jpeg" class="mentor-img">
-                              <div>
-                                 <span class="mentor-name">Vanshika Gupta</span><br>
-                                 <span class="mentor-job">Step Intern: Google</span><br>
-                                 <span class="mentor-college">CSE, DTU</span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
+                      </div>
+                    </div>
                   </div>
-                  <h3 class="text-left">Senior Mentors</h3>
-                  <div class="row">
+                <div class="col-lg-4 col-md-6 mentor-cards-home">
+                  <div class="card">
+                    <div class="img-bx">
+                      <img src="images/mentor/41.jpg" alt="img" />
+                    </div>
+                    <div class="content">
+                      <div class="detail">
+                        <h2>
+                          Bhumi Malla<br /><h2
+                            >Organization Lead : Nepal<br />Data Engineer at Cedargate</h2
+                          >
+                        </h2>
+                        <ul class="sci">
+                         
+                          <li>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-                     <div class="col-lg-4 col-md-6 mentor-card-container">
-                        <div class="card mentor-card-outer mentor-card">
-                           <div class="row" style="display: flex">
-                              <img src="images/mentor/6.jpg" class="mentor-img">
-                              <div>
-                                 <span class="mentor-name">Aeshna Jain</span><br>
-                                 <span class="mentor-job">SDE: Uber</span><br>
-                                 <span class="mentor-college">IT, IGDTUW</span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-4 col-md-6 mentor-card-container">
-                        <div class="card mentor-card-outer mentor-card">
-                           <div class="row" style="display: flex">
-                              <img src="images/mentor/0.jpg" class="mentor-img">
-                              <div>
-                                 <span class="mentor-name">Aiman Siddiqua</span><br>
-                                 <span class="mentor-job">SDE Intern: Amazon</span><br>
-                                 <span class="mentor-college">MCE, DTU</span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-4 col-md-6 mentor-card-container">
-                        <div class="card mentor-card-outer mentor-card">
-                           <div class="row" style="display: flex">
-                              <img src="images/mentor/2.jpg" class="mentor-img">
-                              <div>
-                                 <span class="mentor-name">Akanksha Tanwar</span><br>
-                                 <span class="mentor-job">SDE Intern: Microsoft</span><br>
-                                 <span class="mentor-college">IT, DTU</span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-
-                     <div class="col-lg-4 col-md-6 mentor-card-container">
-                        <div class="card mentor-card-outer mentor-card">
-                           <div class="row" style="display: flex">
-                              <img src="images/mentor/1.jpg" class="mentor-img">
-                              <div>
-                                 <span class="mentor-name">Chitra Singla</span><br>
-                                 <span class="mentor-job">SDE Intern: Amazon</span><br>
-                                 <span class="mentor-college">CSE, DTU</span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-4 col-md-6 mentor-card-container">
-                        <div class="card mentor-card-outer mentor-card">
-                           <div class="row" style="display: flex">
-                              <img src="images/mentor/9.jpg" class="mentor-img">
-                              <div>
-                                 <span class="mentor-name">Deepti Aggarwal</span><br>
-                                 <span class="mentor-job">SDE: Microsoft</span><br>
-                                 <span class="mentor-college">CSE, DTU</span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-
-                     <div class="col-lg-4 col-md-6 mentor-card-container">
-                        <div class="card mentor-card-outer mentor-card">
-                           <div class="row" style="display: flex">
-                              <img src="images/mentor/4.jpg" class="mentor-img">
-                              <div>
-                                 <span class="mentor-name">Joshika</span><br>
-                                 <span class="mentor-job">SDE: Salesforce</span><br>
-                                 <span class="mentor-college">CSE, IIT Patna</span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-4 col-md-6 mentor-card-container">
-                        <div class="card mentor-card-outer mentor-card">
-                           <div class="row" style="display: flex">
-                              <img src="images/mentor/28.jpeg" class="mentor-img">
-                              <div>
-                                 <span class="mentor-name">Kajal Gupta</span><br>
-                                 <span class="mentor-job">SDE Intern: Uber</span><br>
-                                 <span class="mentor-college">CSE, DTU</span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-4 col-md-6 mentor-card-container">
-                        <div class="card mentor-card-outer mentor-card">
-                           <div class="row" style="display: flex">
-                              <img src="images/mentor/7.jpg" class="mentor-img">
-                              <div>
-                                 <span class="mentor-name">Krati Garg</span><br>
-                                 <span class="mentor-job">SDE Intern: Google</span><br>
-                                 <span class="mentor-college">CSE, DTU</span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-4 col-md-6 mentor-card-container">
-                        <div class="card mentor-card-outer mentor-card">
-                           <div class="row" style="display: flex">
-                              <img src="images/mentor/17.jpeg" class="mentor-img">
-                              <div>
-                                 <span class="mentor-name">Nishee Sharma</span><br>
-                                 <span class="mentor-job">SDE Intern: Google & Uber</span><br>
-                                 <span class="mentor-college">MCA, IIT Dhanbad</span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-4 col-md-6 mentor-card-container">
-                        <div class="card mentor-card-outer mentor-card">
-                           <div class="row" style="display: flex">
-                              <img src="images/mentor/29.jpeg" class="mentor-img">
-                              <div>
-                                 <span class="mentor-name">Parigya Jain</span><br>
-                                 <span class="mentor-job">SDE Intern: Amazon</span><br>
-                                 <span class="mentor-college">MCA, DTU</span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-4 col-md-6 mentor-card-container">
-                        <div class="card mentor-card-outer mentor-card">
-                           <div class="row" style="display: flex">
-                              <img src="images/mentor/19.jpeg" class="mentor-img">
-                              <div>
-                                 <span class="mentor-name">Priyanka Yadav</span><br>
-                                 <span class="mentor-job">SDE: LinkedIn</span><br>
-                                 <span class="mentor-college">CSE, UPES</span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
+                <div class="col-lg-4 col-md-6 mentor-cards-home">
+                  <div class="card">
+                    <div class="img-bx">
+                      <img src="images/mentor/40.jpg" alt="img" />
+                    </div>
+                    <div class="content">
+                      <div class="detail">
+                        <h2>
+                          Sumee Adhikari<br /><h2
+                            >Organization Lead : Nepal <br />QA Engineer | QniVerse</h2
+                          >
+                        </h2>
+                        <ul class="sci">               
+                          <li>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
-               </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mentor-cards-home">
+                  <div class="card">
+                    <div class="img-bx">
+                      <img src="images/mentor/42.jpg" alt="img" />
+                    </div>
+                    <div class="content">
+                      <div class="detail">
+                        <h2>
+                          Kulsum Siddique<br /><h2
+                            >Organization Lead : Bangladesh<br />AVP, QA | Green Delta Insurance</h2
+                          >
+                        </h2>
+                        <ul class="sci">
+                         
+                          <li>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-2"></div>
+                <div class="col-lg-4 col-md-6 mentor-cards-home">
+                  <div class="card">
+                    <div class="img-bx">
+                      <img src="images/mentor/26.jpeg" alt="img" />
+                    </div>
+                    <div class="content">
+                      <div class="detail">
+                        <h2>
+                          Jyoti Bisht<br /><h2
+                            >Codess.Cafe OSS Lead <br />DevRel: Jina AI | MLH
+                            Fellow'21</h2
+                          >
+                        </h2>
+                        <ul class="sci">
+                          
+                          <li>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mentor-cards-home">
+                  <div class="card">
+                    <div class="img-bx">
+                      <img src="images/mentor/39.jpeg" alt="img" />
+                    </div>
+                    <div class="content">
+                      <div class="detail">
+                        <h2>
+                          Vidhi Bhatt<br /><h2
+                            >Editor-in-chief <br />WE Scholar '21 |
+                            CSE, GTU</h2
+                          >
+                        </h2>
+                        <ul class="sci">
+                         
+                          <li>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-2"></div>
+
+                <div class="col-lg-4 col-md-6 mentor-cards-home"></div>
+                <div class="col-lg-4 col-md-6">
+                  <a href="mentors.html"
+                    ><button class="btn-apply-team">Team</button></a
+                  >
+                </div>
+                <div class="col-lg-4 col-md-6 mentor-cards-home"></div>
+              </div>
             </div>
-         </div>
-   </section>
+          </div>
+        </div>
+      </section>
 
-   <section id="apply">
-      <div class="container">
-         <div class="col-12 mb-5">
+      <section id="numbers" class="my-1">
+        <div class="container-fluid mt-5" id="placement-banner">
+          <div class="container text-center">
+            <h1 class="display-6 text-center font-weight-bold">
+              Numbers Speak Louder
+            </h1>
+            <div class="row">
+              <div class="col-lg-3 col-sm-6 mt-3">
+                <h4 class="display-4 font-weight-bold">700+</h4>
+                <br>
+                <h5>Community members</h5>
+              </div>
+              <div class="col-lg-3 col-sm-6 mt-3">
+                <h4 class="display-4 count font-weight-bold">500+</h4>
+                <br>
+                <h5>Offers and scholarships bagged</h5>
+              </div>
+
+              <div class="col-lg-3 col-sm-6 mt-3">
+                <h4 class="display-4 count font-weight-bold">50+</h4>
+                <br>
+                <h5>Companies</h5>
+              </div>
+              <div class="col-lg-3 col-sm-6 mt-3">
+                <h4 class="display-4 count font-weight-bold">22,00,000+</h4>
+                <br>
+                <h5>Avg CTC</h5>
+              </div>
+            </div>
+      </section>
+
+      <section id="apply" class="mentors-section">
+        <div class="container">
+          <div class="col-12 mb-5">
             <h1 class="display-6 text-center font-weight-bold">Apply</h1>
             <!-- <p class="lead">Meet our fabulous team of 10x mentors</p> -->
-         </div>
-         <div class="row">
-            <div class="col-lg-12" style="padding-bottom: 3%;">
-               <h1 class="text-center" style="font-size: 25px">We release forms regularly on LinkedIn to take new
-                  members</h1>
-               <h1 class="text-center" style="font-size: 25px">We have two intake programs depending on your year of
-                  study</h1>
+          </div>
+          <div class="">
+            <div class="" style="padding-bottom: 3%">
+              <h1 class="text-center" style="font-size: 25px">
+                We release forms regularly on LinkedIn to take new members
+              </h1>
+              <h1 class="text-center" style="font-size: 25px">
+                We have two intake programs depending on your year of study
+              </h1>
             </div>
-            <div class="col-lg-12" style="padding-bottom: 3%;">
+            <!-- <div class="col-lg-12" style="padding-bottom: 3%;">
                <h1 class="text-center" style="font-size: 20px">Codess.Cafe : For 3rd, 4th and 5th year students</h1>
                <h2 class="text-center" style="font-size: 20px">Applications releasing in March 2022</h2>
                <br />
@@ -769,124 +833,257 @@
                   3. Shortlisted members are contacted via mail, linkedIn or whatsapp within 14 days<br>
                   4. New members are added to invited to join Codess.Cafe Discord channel and the growth begins !
                </h1>
-            </div>
-         </div>
-      </div>
-   </section>
+            </div> -->
 
-   <section id="faq">
-      <div class="container text-left">
-         <h1 class="text-center font-weight-bold"> FAQ's</h1>
-         <p class="text-muted text-center">Frequently Asked Questions</p>
-         <div id="accordion">
-            <div class="card">
-               <div class="card-header" id="headingTwo">
-                  <h5 class="mb-0">
-                     <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
-                        aria-expanded="false" aria-controls="collapseTwo">
-                        How long is the program ?
-                     </button>
-                  </h5>
-               </div>
-               <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                  <div class="card-body">
-                     There is no fixed duration. Stay and enjoy the benefits of community and mentorship as long as you
-                     would like 🙂
-                  </div>
-               </div>
-            </div>
-            <div class="card">
-               <div class="card-header" id="headingThree">
-                  <h5 class="mb-0">
-                     <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
-                        aria-expanded="false" aria-controls="collapseThree">
-                        Is the program paid ?
-                     </button>
-                  </h5>
-               </div>
-               <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                  <div class="card-body">
-                     The program is completely free, thanks to our generous mentors 🙌
-                  </div>
-               </div>
-            </div>
-            <div class="card">
-               <div class="card-header" id="headingFour">
-                  <h5 class="mb-0">
-                     <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
-                        aria-expanded="false" aria-controls="collapseFour">
-                        What are the pre-requisites for this program ?
-                     </button>
-                  </h5>
-               </div>
-               <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-                  <div class="card-body">
-                     No pre-requisites, we only need highly motivated individuals 🤓
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="card">
-            <div class="card-header" id="headingFive">
-               <h5 class="mb-0">
-                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive"
-                     aria-expanded="false" aria-controls="collapseFive">
-                     Is this program only for women ?
-                  </button>
-               </h5>
-            </div>
-            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
-               <div class="card-body">
-                  Yes, this is a community and mentorship program just for women.
-               </div>
-            </div>
-         </div>
-      </div>
-      </div>
-      <div style="height:100px"></div>
-   </section>
-   <!--Footer-->
-   <section id="footer" class="p-5">
-      <div>
-         <div class="container text-center">
-            <img src="images/logo.gif" width="200px">
-            <div class="row mt-5 text-center text-light">
-               <div class="col-sm-6 text-left">
-                  <h4 class="lead"><strong>Get in Touch</strong></h4>
-                  <br>
-                  <a class="social-link" href="mailto: aarnavjindal1000@gmail.com">
-                     <p><i class="fa fa-envelope fa-2x" aria-hidden="true"> </i> Connect over email
-                     </p>
-                  </a>
-                  <a class="social-link" target="_blank" href="https://www.linkedin.com/company/codesscafe/">
-                     <p><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"> </i> Follow on LinkedIn
-                     </p>
-                  </a>
-               </div>
-               <div class="col-sm-6 text-left">
-                  <h4 class="lead"><strong>Codess.Cafe</strong></h4>
-                  <p class="text-white">
-                     Codess.Cafe was started with a vision to empower women in tech to grab the opportunities they
-                     deserve.
-                     With dedicated, quality guidance and mentorship, we wish to improve the represenation of women in
-                     high impact organisations for a better and more inclusive future.
+            <!-- timeline -->
+            <div class="blob"></div>
+            <div class="container-timeline">
+              <div class="timeline-block timeline-block-right">
+                <div class="marker"></div>
+                <div class="timeline-content">
+                  <h3>First Step</h3>
+                  <p>
+                    Fill the Google form released on our Codess.Cafe website or
+                    our LinkedIn page
                   </p>
-               </div>
-            </div>
-            <hr>
-            <p class="text-center text-white-50 mt-5"> ©2021 Codess.Cafe. All rights reserved </p>
-   </section>
-   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-   <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"></script>
-   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"></script>
-</body>
+                </div>
+              </div>
 
+              <div class="timeline-block timeline-block-left">
+                <div class="marker"></div>
+                <div class="timeline-content">
+                  <h3>Second Step</h3>
+                  <p>
+                    Our team of 30+ mentors reviews the resumes and pick the
+                    mentees they're interested in mentoring
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline-block timeline-block-right">
+                <div class="marker"></div>
+                <div class="timeline-content">
+                  <h3>Third Step</h3>
+                  <p>
+                    Shortlisted members are contacted via mail, linkedIn or
+                    whatsapp within 14 days
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline-block timeline-block-left">
+                <div class="marker"></div>
+                <div class="timeline-content">
+                  <h3>Fourth Step</h3>
+                  <p>
+                    New members are added to invited to join Codess.Cafe Discord
+                    channel and the growth begins
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- forms -->
+            <div class="row">
+              <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="card-apply">
+                  <h1 class="title-apply">1st and 2nd Year</h1>
+                  <p class="subtitle-apply">
+                    We are eager to have you onboard.<br>
+                    Form will be released on LinkedIn and here.<br>
+                    Applications releasing in Oct 2022.
+                  </p>
+                  <button class="btn-apply">Currently closed</button>
+                </div>
+              </div>
+              <br />
+
+              <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="card-apply">
+                  <h1 class="title-apply">3rd, 4th and 5th Year</h1>
+                  <p class="subtitle-apply">
+                    We are eager to have you onboard.<br>
+                    Form will be released on LinkedIn and here.<br>
+                    Applications releasing in Oct 2022.
+                  </p>
+                  <button class="btn-apply">Currently closed</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq">
+        <div class="container-faq text-left">
+          <h1 class="text-center font-weight-bold">FAQ's</h1>
+          <p class="text-muted text-center">Frequently Asked Questions</p>
+          <div id="accordion">
+            <div>
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button
+                    class="btn btn-link collapsed"
+                    data-toggle="collapse"
+                    data-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    How long is the program ?
+                  </button>
+                </h5>
+              </div>
+              <div
+                id="collapseTwo"
+                class="collapse"
+                aria-labelledby="headingTwo"
+                data-parent="#accordion"
+              >
+                <div class="card-body">
+                  There is no fixed duration. Stay and enjoy the benefits of
+                  community and mentorship as long as you would like 🙂
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button
+                    class="btn btn-link collapsed"
+                    data-toggle="collapse"
+                    data-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    Is the program paid ?
+                  </button>
+                </h5>
+              </div>
+              <div
+                id="collapseThree"
+                class="collapse"
+                aria-labelledby="headingThree"
+                data-parent="#accordion"
+              >
+                <div class="card-body">
+                  The program is completely free, thanks to our generous mentors
+                  🙌
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="card-header" id="headingFour">
+                <h5 class="mb-0">
+                  <button
+                    class="btn btn-link collapsed"
+                    data-toggle="collapse"
+                    data-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    What are the pre-requisites for this program ?
+                  </button>
+                </h5>
+              </div>
+              <div
+                id="collapseFour"
+                class="collapse"
+                aria-labelledby="headingFour"
+                data-parent="#accordion"
+              >
+                <div class="card-body">
+                  No pre-requisites, we only need highly motivated individuals
+                  🤓
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card-header" id="headingFive">
+              <h5 class="mb-0">
+                <button
+                  class="btn btn-link collapsed"
+                  data-toggle="collapse"
+                  data-target="#collapseFive"
+                  aria-expanded="false"
+                  aria-controls="collapseFive"
+                >
+                  Is this program only for women ?
+                </button>
+              </h5>
+            </div>
+            <div
+              id="collapseFive"
+              class="collapse"
+              aria-labelledby="headingFive"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                Yes, this is a community and mentorship program just for women.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section id="footer" class="p-5">
+      <div class="footer-dark">
+        <footer>
+          <div class="container-footer">
+            <div class="row">
+              <div class="col-md-6 item">
+                <img class="footer-logo" src="images/logo.gif" alt="" />
+              </div>
+              <div class="col-sm-6 col-md-6 item">
+                <p class="footer-logo-text">
+                  Codess.Cafe was started with a vision to empower women in tech
+                  to grab the opportunities they deserve. With dedicated,
+                  quality guidance and mentorship, we wish to improve the
+                  represenation of women in high impact organisations for a
+                  better and more inclusive future.
+                </p>
+                <div class="col item social1">
+                  <a
+                    class="social-link"
+                    href="mailto: aarnavjindal1000@gmail.com"
+                    ><i class="fa fa-envelope envelope social_icons"></i
+                  ></a>
+                  <a
+                    class="social-link"
+                    target="_blank"
+                    href="https://twitter.com/CodessCafe/"
+                    ><i class="fa fa-twitter twitter social_icons"></i
+                  ></a>
+                  <a
+                    class="social-link"
+                    target="_blank"
+                    href="https://www.linkedin.com/company/codesscafe/"
+                    ><i class="fa fa-linkedin linkedin social_icons"></i
+                  ></a>
+                  <a
+                    class="social-link"
+                    target="_blank"
+                    href="https://medium.com/codess-cafe/"
+                    ><i class="fa fa-medium medium social_icons"></i
+                  ></a>
+                  <a
+                    class="social-link"
+                    target="_blank"
+                    href="https://www.youtube.com/channel/UC91cziHilAn3tsk30wxbHvA"
+                    ><i class="fa fa-youtube youtube social_icons"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <br /><br />
+            <hr class="one" />
+            <p class="copyright">&copy; 2022 Codess.Cafe, All Right Reserved</p>
+          </div>
+        </footer>
+      </div>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
 </html>
