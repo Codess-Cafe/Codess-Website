@@ -448,6 +448,10 @@ body {
   border-radius: 12px;
   /* border: 1px solid rgba(255, 255, 255, 0.125); */
 }
+.card:hover{
+  box-shadow: 10px 5px rgba(20, 20, 20, 0.53);
+  transform: scale(1.01);
+}
 .card-testimonials {
   position: relative;
 
@@ -522,32 +526,29 @@ body {
 .sci {
   position: relative;
   display: flex;
-  margin-top: 0;
+  margin-top: 5px;
   align-items: center;
 }
 
-.sci li {
-  list-style: none;
-  margin: 4px;
-}
 
-.sci li a {
-  width: 45px;
+
+.sci a {
+  width: 100px;
   height: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
+  border-radius: 1rem;
   background: transparent;
   font-size: 1.5em;
   color: #444;
   text-decoration: none;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   transition: 0.5s;
-  visibility: hidden;
+  /* visibility: hidden; */
 }
 
-.sci li a:hover {
+.sci a:hover {
   background: #03a9f4;
   color: #fff;
 }
