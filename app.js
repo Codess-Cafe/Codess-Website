@@ -51,3 +51,12 @@ function clearActiveClasses() {
         slide.classList.remove('active');
     })
 }
+
+const teamCard = document.querySelectorAll('.mentor-cards-home');
+
+teamCard.forEach(card => {
+  card.addEventListener('click', ()=>{
+    var name = card.querySelector('h2').innerText
+    window.location.href = `http://example.com/${name}`;
+  } );
+});
