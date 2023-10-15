@@ -361,9 +361,10 @@ body {
   height: 80px;
   width: 80px;
 }
-
+ 
 .text-muted {
   color: #6c757d !important;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 500px) {
