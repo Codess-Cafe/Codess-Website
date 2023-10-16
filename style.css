@@ -1,15 +1,12 @@
 /* Global Variables */
 :root {
   --primary-gradient-purple: linear-gradient(315deg, #f9c5d1 0%, #9795ef 74%);
-  /* --button-gradient: linear-gradient(90deg, #5848EA, #9549EB, #6CC644); */
+  
 }
 
 .announcement {
   background-color: #6bb329;
-  /*#7ac25b;*/
 }
-
-
 
 .announcement a {
   color: white;
@@ -51,15 +48,7 @@ body {
   background-color: #ebedee;
 }
 
-/* .nav-link{
-    color:white !important;
-    font-family: Nunito,sans-serif;
-    font-size: medium;
-    font-weight: 400;
-  }
-  .nav-link:hover {
-    border-bottom: 3px solid  #B2E63A;
-  } */
+
 
 #cover-banner {
   background: var(--primary-gradient-purple);
@@ -87,13 +76,7 @@ body {
   /* background: var(--primary-gradient-purple); */
 }
 
-/* .text-center > h1 , h4, h5{
-    background: -webkit-linear-gradient( #f9c5d1, #9795ef, #beb0d0);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  } */
 
-/* Button Styles */
 @keyframes button-gradient {
   0% {
     background-position: 0% 50%;
