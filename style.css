@@ -1089,6 +1089,28 @@ img.logo {
   }
 }
 
+/* FAQ Section */
+
+.card-header{
+  background-color: #e3e5e6;
+  transition: background-color 0.3s;
+}
+
+#faq button{
+ text-decoration: none;
+}
+
+.card-header:hover {
+  background-color: #c1c3c4;
+}
+
+.btn-link::after {
+  content: '\f107';
+  font-family: 'Font Awesome 5 Free';
+  padding-left: 5px;
+  text-decoration: none;
+}
+
 /* landing page */
 /*Title Section*/
 
