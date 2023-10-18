@@ -1,5 +1,7 @@
 # Welcome to CodessCafe GitHub Repository!
 
+![logo](images/logo.gif)
+
 ## What is CodessCafe?
 
 CodessCafe is a pro bono mentorship program and a thriving community of women in technology. We are on a mission to empower women in India, fostering their growth in the tech industry. At CodessCafe, we believe in the power of mentorship and community building, and we strive to create a supportive environment for women to learn, collaborate, and excel in their careers. And this is the repo of our website!
@@ -23,6 +25,9 @@ We have a variety of issues that you can contribute to. Whether it's squashing b
 At CodessCafe, we deeply appreciate the efforts of our contributors. Every issue you work on, no matter how minor, is a step towards making CodessCafe better. Each improvement matters and contributes to the growth of our community and mentorship program. Since, we are run by volunteers, it greatly helps us!
 
 If you are interested in joining the team of Codess or want to see how to get involved, please see our Linkedin.
+
+Note: Please refer to our [CONTTRIBUTION GUIDELINES](https://github.com/Codess-Cafe/Codess-Website/blob/main/CONTRIBUTING.md) before making your first contribution! The CONTRIBUTING.md file in this repository guides potential contributors, outlining the guidelines and expectations for contributing to this project. 
+
 
 ## How to Get Started
 
