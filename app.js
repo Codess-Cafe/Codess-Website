@@ -52,25 +52,3 @@ function clearActiveClasses() {
     })
 }
 
-/*text animation*/
-document.addEventListener("DOMContentLoaded", function () {
-    const word1 = document.getElementById("word1");
-    const word2 = document.getElementById("word2");
-
-    let activeWord = word1;
-    let inactiveWord = word2;
-
-    function toggleWords() {
-        activeWord.classList.remove("active");
-        inactiveWord.classList.add("active");
-
-        // Swap active and inactive words
-        const temp = activeWord;
-        activeWord = inactiveWord;
-        inactiveWord = temp;
-
-        setTimeout(toggleWords, 2000); // Change every 2 seconds (2000 milliseconds)
-    }
-
-    toggleWords(); // Start the word carousel
-});
