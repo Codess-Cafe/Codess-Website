@@ -40,3 +40,22 @@
     font-size: 14px;
     margin-left: 15px;
 }
+
+
+/* scrollbar */
+
+  
+::-webkit-scrollbar {
+    width: 6px; 
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: linear-gradient(#caaee0, #f8c5d1);
+    border-radius: 12px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #5a59aa;
+    border-radius: 12px;
+    border: 0.5px solid rgba(119, 119, 119, 0.562)
+    }

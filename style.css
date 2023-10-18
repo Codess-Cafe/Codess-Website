@@ -43,6 +43,7 @@
 }
 
 body {
+  width: -webkit-fill-available;
   font-family: Nunito, sans-serif;
   color: black;
   background-color: #ebedee;
@@ -809,6 +810,7 @@ img.logo {
 
 
 
+
 /* upcoming chapters */
 
 .slide-container {
@@ -1233,3 +1235,4 @@ h1.big-heading {
 .container-faq {
   padding: 3%;
 }
+
