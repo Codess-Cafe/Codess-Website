@@ -602,7 +602,7 @@ body {
 
 .social {
   position: fixed;
-  top: 250px;
+  top: 350px;
 }
 
 .social ul {
@@ -1134,6 +1134,10 @@ h1.big-heading {
   /* 'Montserrat', */
   size: 3.5rem;
   line-height: 1.5;
+}
+.row{
+  display: flex;
+  align-items: center;
 }
 
 /*Title Image*/
