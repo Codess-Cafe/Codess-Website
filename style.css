@@ -1135,7 +1135,9 @@ h1.big-heading {
   size: 3.5rem;
   line-height: 1.5;
 }
-
+#title .big-heading-text {
+  margin-top: 50px; 
+}
 /*Title Image*/
 
 .title-img {
@@ -1143,6 +1145,8 @@ h1.big-heading {
   height: 100%;
   /* position:absolute; */
   right: 30%;
+  margin-bottom: 50px;
+  margin-top: -50px;
 }
 
 /* footer */
