@@ -1149,7 +1149,9 @@ h1.big-heading {
   size: 3.5rem;
   line-height: 1.5;
 }
-
+#title .big-heading-text {
+  margin-top: 50px; 
+}
 
 /*Title Image*/
 
