@@ -602,7 +602,7 @@ body {
 
 .social {
   position: fixed;
-  top: 350px;
+  top: 250px;
 }
 
 .social ul {
@@ -1135,11 +1135,9 @@ h1.big-heading {
   size: 3.5rem;
   line-height: 1.5;
 }
-.row{
-  display: flex;
-  align-items: center;
+#title .big-heading-text {
+  margin-top: 45px; /* Adjust the margin-top value as needed */
 }
-
 /*Title Image*/
 
 .title-img {
@@ -1147,6 +1145,7 @@ h1.big-heading {
   height: 100%;
   /* position:absolute; */
   right: 30%;
+  margin-bottom: 25px;
 }
 
 /* footer */
