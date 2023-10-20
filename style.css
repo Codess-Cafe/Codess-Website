@@ -361,9 +361,10 @@ body {
   height: 80px;
   width: 80px;
 }
-
+ 
 .text-muted {
   color: #6c757d !important;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 500px) {
@@ -465,6 +466,10 @@ body {
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.125);
 }
+ .card-testimonials:hover{   
+   border: 3px solid #cb68f3;
+   transform: scale(1.02);
+ }
 .img-bx {
   position: absolute;
   top: 0;
@@ -1086,6 +1091,28 @@ img.logo {
     float: none;
     direction: ltr;
   }
+}
+
+/* FAQ Section */
+
+.card-header{
+  background-color: #e3e5e6;
+  transition: background-color 0.3s;
+}
+
+#faq button{
+ text-decoration: none;
+}
+
+.card-header:hover {
+  background-color: #c1c3c4;
+}
+
+.btn-link::after {
+  content: '\f107';
+  font-family: 'Font Awesome 5 Free';
+  padding-left: 5px;
+  text-decoration: none;
 }
 
 /* landing page */
