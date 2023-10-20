@@ -1125,7 +1125,6 @@ img.logo {
   /* margin-top:100px; */
   margin-top: 0px 0px 8px;
 }
-/* heading with animation*/
 h1.big-heading {
   color: #fff;
   font-weight: 900;
@@ -1152,7 +1151,6 @@ h1.big-heading {
 #title .big-heading-text {
   margin-top: 50px; 
 }
-
 /*Title Image*/
 
 .title-img {
@@ -1160,6 +1158,8 @@ h1.big-heading {
   height: 100%;
   /* position:absolute; */
   right: 30%;
+  margin-bottom: 50px;
+  margin-top: -50px;
 }
 
 /* footer */
