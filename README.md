@@ -1,6 +1,7 @@
 # Welcome to CodessCafe GitHub Repository!
 
-![logo](images/logo.gif)
+![image](https://github.com/Codess-Cafe/Codess-Website/assets/83345228/3bc879bd-4634-413b-b80e-25a6bb320791)
+
 
 ## What is CodessCafe?
 
