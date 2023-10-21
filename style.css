@@ -1133,7 +1133,15 @@ img.logo {
 }
 
 .btn-link::after {
-  content: '\f107';
+  content: '\f107'; /* Caret down icon */
+  font-family: 'Font Awesome 5 Free';
+  padding-left: 5px;
+  text-decoration: none;
+}
+
+
+.btn-link[aria-expanded="true"]::after {
+  content: '\f106'; /* Caret up icon */
   font-family: 'Font Awesome 5 Free';
   padding-left: 5px;
   text-decoration: none;
