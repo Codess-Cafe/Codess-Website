@@ -804,16 +804,17 @@ img.logo {
   text-align: left;
   font-family: Nunito, sans-serif;
 }
- @media (max-width : 650px){
-    #about .container .about-subtitle p {
-        margin-top : 5px;
-          text-align: center;
-          }
-          #about .container .about-subtitle h1 {margin-top : 8px;
-            text-align: center ;
-              font-family: Nunito, sans-serif;
-              }
-              }
+@media (max-width : 650px){
+  #about .container .about-subtitle p {
+    margin-top : 5px;
+    text-align: center;
+  }
+  #about .container .about-subtitle h1 {
+    margin-top : 8px;
+    text-align: center ;
+    font-family: Nunito, sans-serif;
+  }
+}
  
 .display-4 {
   font-size: 3.5rem;
