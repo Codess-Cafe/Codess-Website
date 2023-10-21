@@ -605,6 +605,10 @@ body {
   top: 250px;
 }
 
+.social ul li a .social1{
+  border-radius: 0 30px 30px 0;
+  background: #f16593;
+}
 .social ul {
   padding: 10px;
   width: 15px;
