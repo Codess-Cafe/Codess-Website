@@ -64,3 +64,62 @@ faqItems.forEach((item) => {
     }
   });
 });
+
+/* Counterup feature for Number Speaks Louder section */
+$('.counter-count').each(function () {
+  $(this).prop('Counter',0).animate({
+      Counter: $(this).text()
+  }, {
+    
+      duration: 4000,
+      easing: 'swing',
+      step: function (now) {
+          $(this).text(Math.ceil(now));
+      }
+  });
+});
+
+function isInViewport(element) {
+  const rect = element.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+function addCommas(number) {
+  return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+}
+
+function updateCounters() {
+  if (!animationStarted && isInViewport(counters[0])) {
+    counters.forEach((counter) => {
+      counter.innerText = '0';
+      const targetWithCommas = counter.getAttribute('data-target');
+      const target = parseFloat(targetWithCommas.replace(/,/g, ''));
+      const increment = target / 400;
+
+      function updateCounter(current) {
+        if (current < target) {
+          const newValue = Math.ceil(current + increment);
+          counter.innerText = addCommas(newValue) + "+"; 
+          setTimeout(() => updateCounter(newValue), 1);
+        } else {
+          counter.innerText = addCommas(target) + "+"; 
+        }
+      }
+      updateCounter(0);
+
+      animationStarted = true; 
+    });
+  }
+}
+
+const counters = document.querySelectorAll('.count');
+let animationStarted = false;
+
+window.addEventListener('scroll', updateCounters);
+
+updateCounters();

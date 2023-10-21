@@ -200,10 +200,10 @@
       <div class="row justify-content-center">
         <div class="container">
           <div class="row justify-content-between align-items-center py-5">
-            <div class="col-md-6">
+            <div class="col-md-6" data-aos="fade-right">
               <img src="images/about-banner2.png" style="width: 100%" alt="" />
             </div>
-            <div class="col-md-6 about-subtitle">
+            <div class="col-md-6 about-subtitle" data-aos="fade-left">
               <h1 class="display-4 heading font-weight-bold">
                 Mentorship Matters
               </h1>
@@ -660,30 +660,30 @@
     </section>
 
     <section id="numbers" class="my-1">
-      <div class="container-fluid mt-5" id="placement-banner">
+      <div class="container-fluid mt-5 " id="placement-banner">
         <div class="container text-center">
           <h1 class="display-6 text-center font-weight-bold">
             Numbers Speak Louder
           </h1>
           <div class="row">
             <div class="col-lg-3 col-sm-6 mt-3">
-              <h4 class="display-4 font-weight-bold">700+</h4>
+              <h4 class="display-4 count font-weight-bold counter" data-target="700"></h4>
               <br>
               <h5>Community members</h5>
             </div>
             <div class="col-lg-3 col-sm-6 mt-3">
-              <h4 class="display-4 count font-weight-bold">500+</h4>
+              <h4 class="display-4 count font-weight-bold counter" data-target="500"></h4>
               <br>
               <h5>Offers and Scholarships Bagged</h5>
             </div>
 
             <div class="col-lg-3 col-sm-6 mt-3">
-              <h4 class="display-4 count font-weight-bold">50+</h4>
+              <h4 class="display-4 count font-weight-bold counter" data-target="50"></h4>
               <br>
               <h5>Companies</h5>
             </div>
             <div class="col-lg-3 col-sm-6 mt-3">
-              <h4 class="display-4 count font-weight-bold">22,00,000+</h4>
+              <h4 class="display-4 count font-weight-bold counter" data-target="22,00,000"></h4>
               <br>
               <h5>Average CTC</h5>
             </div>
@@ -888,6 +888,12 @@
   </section>
 
   <script src="app.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000, 
+      offset: 100,   
+    });
+  </script>
 </body>
 
 </html>
