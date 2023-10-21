@@ -51,3 +51,16 @@ function clearActiveClasses() {
         slide.classList.remove('active');
     })
 }
+
+/* FAQ section */
+let faqItems = document.querySelectorAll('.faq-item');
+
+faqItems.forEach((item) => {
+  item.addEventListener('click', () => {
+    // Find the button element inside the FAQ item and trigger a click
+    const button = item.querySelector('button');
+    if (button) {
+      button.click();
+    }
+  });
+});
