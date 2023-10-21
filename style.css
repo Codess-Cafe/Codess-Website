@@ -838,7 +838,15 @@ img.logo {
 
 .slide-card {
   border-radius: 10px;
-  background-color: rgba(255,255,255,0.2);
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: transform 0.2s, background-color 0.2s; 
+}
+
+.slide-card:hover {
+  transform: scale(1.05);
+  background-color: rgba(255, 255, 255, 0.3); 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+  border: 2px solid #007bff; 
 }
 
 .slide-card img {
