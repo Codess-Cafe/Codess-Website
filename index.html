@@ -26,6 +26,10 @@
       crossorigin="anonymous"
     ></script>
 
+    <!---------------------------aos animation------------------------------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
     <!------------------jquery/js bootstrap cdn---------------------->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -233,14 +237,14 @@
         <div class="row justify-content-center">
           <div class="container">
             <div class="row justify-content-between align-items-center py-5">
-              <div class="col-md-6">
+              <div class="col-md-6" data-aos="fade-right">
                 <img
                   src="images/about-banner2.png"
                   style="width: 100%"
                   alt=""
                 />
               </div>
-              <div class="col-md-6 about-subtitle">
+              <div class="col-md-6 about-subtitle" data-aos="fade-left">
                 <h1 class="display-4 heading font-weight-bold">
                   Mentorship Matters
                 </h1>
@@ -1055,5 +1059,11 @@
 <!-- copyright-year Script -->
 <script src="./copyrightYear.js"></script>
     <script src="app.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000, 
+        offset: 100,   
+      });
+    </script>
   </body>
 </html>
