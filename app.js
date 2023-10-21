@@ -51,3 +51,6 @@ function clearActiveClasses() {
         slide.classList.remove('active');
     })
 }
+
+/*Dynamically changing the copyright*/ 
+document.getElementById("year").innerHTML = new Date().getFullYear();
