@@ -881,10 +881,12 @@ img.logo {
 /* upcoming chapters */
 
 .slide-container {
-  
+  margin-bottom: 30px;
 }
 
 .slide-card {
+  text-align: center;
+  height: 300px;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.2);
   transition: transform 0.2s, background-color 0.2s; 
