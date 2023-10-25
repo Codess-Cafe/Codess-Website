@@ -1172,8 +1172,16 @@ img.logo {
   transition: background-color 0.3s;
 }
 
+#faq{
+  margin-left: 10px;
+}
+
 #faq button{
  text-decoration: none;
+}
+
+.card-body{
+  margin-left: 25px;
 }
 
 .card-header:hover {
