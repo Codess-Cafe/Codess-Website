@@ -805,7 +805,31 @@ img.logo {
 .nav-link {
   font-size: 1.2rem;
   font-family: Nunito , sans-serif;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s color;
 }
+
+.nav-link:hover{
+  color: white !important;
+}
+
+.nav-link::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+  background-color: white;
+  transform: translateX(-100%);
+  transition: 0.4s transform;
+}
+
+.nav-link:hover::after{
+  transform: translateX(0%);
+}
+
 .signin-btn {
   padding: 6px 16px;
 }
@@ -1325,6 +1349,9 @@ h1.big-heading {
 }
 
 @media (max-width: 991px) {
+  .nav-link:after{
+    display: none;
+  }
   .footer-dark .item.social1 {
     text-align: center;
     margin-top: 20px;
