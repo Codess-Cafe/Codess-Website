@@ -886,7 +886,7 @@ img.logo {
 
 .slide-card {
   text-align: center;
-  height: 300px;
+  height: 320px;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.2);
   transition: transform 0.2s, background-color 0.2s; 
