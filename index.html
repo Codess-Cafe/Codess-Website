@@ -324,7 +324,7 @@
           <br><br><br>
         </div>
       </div>
-      <div class="container">
+      <div class="container" id="languages">
         <div class="row justify-content-between no-gutters">
           <div class="circle row justify-content-center udemy-perk-logo-container">
             <img class="img-fluid udemy-perk-logo" src="images/c++.svg" alt="" />
@@ -782,78 +782,94 @@
       </div>
     </section>
 
+    <!-- FAQ Section -->
     <section id="faq">
       <div class="container-faq text-left">
         <h1 class="text-center font-weight-bold">FAQ's</h1>
         <p class="text-muted text-center">Frequently Asked Questions</p>
-        <div id="accordion">
-          <div class="faq-item">
-            <div class="card-header" id="headingTwo">
-              <h5 class="mb-0">
-                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
-                  aria-expanded="false" aria-controls="collapseTwo">
-                  How long is the program ?
-                </button>
-              </h5>
-            </div>
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-              <div class="card-body">
-                There is no fixed duration. Stay and enjoy the benefits of
-                community and mentorship as long as you would like 🙂
+        <div class="row">
+
+          <!-- left side start -->
+          <div class="col-md-6">
+            <div id="accordion-left"> 
+              <div class="faq-item">
+                <div class="card-header" id="headingLeftTwo">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseLeftTwo"
+                      aria-expanded="false" aria-controls="collapseLeftTwo">
+                      How long is the program?
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseLeftTwo" class="collapse" aria-labelledby="headingLeftTwo" data-parent="#accordion-left">
+                  <div class="card-body">
+                    There is no fixed duration. Stay and enjoy the benefits of
+                    community and mentorship as long as you would like 🙂
+                  </div>
+                </div>
+              </div>
+              <div class="faq-item">
+                <div class="card-header" id="headingLeftThree">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseLeftThree"
+                      aria-expanded="false" aria-controls="collapseLeftThree">
+                      Is the program paid?
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseLeftThree" class="collapse" aria-labelledby="headingLeftThree" data-parent="#accordion-left">
+                  <div class="card-body">
+                    The program is completely free, thanks to our generous mentors
+                    🙌
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="faq-item">
-            <div class="card-header" id="headingThree">
-              <h5 class="mb-0">
-                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
-                  aria-expanded="false" aria-controls="collapseThree">
-                  Is the program paid ?
-                </button>
-              </h5>
-            </div>
-            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-              <div class="card-body">
-                The program is completely free, thanks to our generous mentors
-                🙌
+          <!-- left side end -->
+
+          <!-- right side start-->
+          <div class="col-md-6">
+            <div id="accordion-right">
+              <div class="faq-item">
+                <div class="card-header" id="headingRightTwo">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseRightTwo"
+                      aria-expanded="false" aria-controls="collapseRightTwo">
+                      What are the pre-requisites for this program ?
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseRightTwo" class="collapse" aria-labelledby="headingRightTwo" data-parent="#accordion-right">
+                  <div class="card-body">
+                    No pre-requisites, we only need highly motivated individuals 🤓
+                  </div>
+                </div>
+              </div>
+              <div class="faq-item">
+                <div class="card-header" id="headingRightThree">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseRightThree"
+                      aria-expanded="false" aria-controls="collapseRightThree">
+                      Is this program only for women ?
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseRightThree" class="collapse" aria-labelledby="headingRightThree" data-parent="#accordion-right">
+                  <div class="card-body">
+                    Yes, this is a community and mentorship program just for women.
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="faq-item">
-            <div class="card-header" id="headingFour">
-              <h5 class="mb-0">
-                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
-                  aria-expanded="false" aria-controls="collapseFour">
-                  What are the pre-requisites for this program ?
-                </button>
-              </h5>
-            </div>
-            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-              <div class="card-body">
-                No pre-requisites, we only need highly motivated individuals
-                🤓
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="faq-item">
-          <div class="card-header" id="headingFive">
-            <h5 class="mb-0">
-              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive"
-                aria-expanded="false" aria-controls="collapseFive">
-                Is this program only for women ?
-              </button>
-            </h5>
-          </div>
-          <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
-            <div class="card-body">
-              Yes, this is a community and mentorship program just for women.
-            </div>
-          </div>
+          <!-- right side end -->
+
         </div>
       </div>
     </section>
   </div>
+  <!-- End of FAQ section -->
 
   <section id="footer" class="p-5">
     <div class="footer-dark">

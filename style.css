@@ -3,6 +3,10 @@
   --primary-gradient-purple: linear-gradient(315deg, #f9c5d1 0%, #9795ef 74%);
   /* --button-gradient: linear-gradient(90deg, #5848EA, #9549EB, #6CC644); */
 }
+*
+{
+  scroll-behavior: smooth;
+}
 
 .announcement {
   background-color: #6bb329;
@@ -541,6 +545,11 @@ body {
   object-fit: cover;
   border-radius: 50%; }
 
+  #languages img:hover {
+    transform: scale(1.1);
+    transition-duration: 0.6s;
+  }
+
 .content {
   position: absolute;
   width: 100%;
@@ -796,7 +805,31 @@ img.logo {
 .nav-link {
   font-size: 1.2rem;
   font-family: Nunito , sans-serif;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s color;
 }
+
+.nav-link:hover{
+  color: white !important;
+}
+
+.nav-link::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+  background-color: white;
+  transform: translateX(-100%);
+  transition: 0.4s transform;
+}
+
+.nav-link:hover::after{
+  transform: translateX(0%);
+}
+
 .signin-btn {
   padding: 6px 16px;
 }
@@ -1067,6 +1100,26 @@ img.logo {
   }
 }
 
+@media (max-width: 768px) {
+  .blob {
+    width: 40%;
+    height: 40%;
+    -webkit-animation: mobile 25s infinite alternate;
+    animation: mobile 25s infinite alternate;
+  }
+
+  @keyframes mobile {
+    from {
+      transform: translate(-10px, -5px) rotate(-70deg);
+      border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
+    }
+
+    to {
+      transform: translate(5px, 1px) rotate(-10deg);
+      border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
+    }
+  }
+
 /* apply timeline */
 
 .container-timeline {
@@ -1174,8 +1227,16 @@ img.logo {
   transition: background-color 0.3s;
 }
 
+#faq{
+  margin-left: 10px;
+}
+
 #faq button{
  text-decoration: none;
+}
+
+.card-body{
+  margin-left: 25px;
 }
 
 .card-header:hover {
@@ -1310,6 +1371,9 @@ h1.big-heading {
 }
 
 @media (max-width: 991px) {
+  .nav-link:after{
+    display: none;
+  }
   .footer-dark .item.social1 {
     text-align: center;
     margin-top: 20px;
@@ -1356,4 +1420,5 @@ h1.big-heading {
 
 .container-faq {
   padding: 3%;
+}
 }
