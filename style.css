@@ -913,9 +913,6 @@ img.logo {
 
 /* upcoming chapters */
 
-.slide-container {
-
-}
 
 .slide-card {
   border-radius: 10px;
@@ -1097,6 +1094,26 @@ img.logo {
     border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
   }
 }
+
+@media (max-width: 768px) {
+  .blob {
+    width: 40%;
+    height: 40%;
+    -webkit-animation: mobile 25s infinite alternate;
+    animation: mobile 25s infinite alternate;
+  }
+
+  @keyframes mobile {
+    from {
+      transform: translate(-10px, -5px) rotate(-70deg);
+      border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
+    }
+
+    to {
+      transform: translate(5px, 1px) rotate(-10deg);
+      border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
+    }
+  }
 
 /* apply timeline */
 
@@ -1398,4 +1415,5 @@ h1.big-heading {
 
 .container-faq {
   padding: 3%;
+}
 }
