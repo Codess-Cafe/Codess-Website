@@ -430,6 +430,10 @@ body {
   height: 800px;
 }
 
+#spc_card{
+  margin-top: 18px;
+}
+
 .card {
   position: relative;
   width: 300px;
