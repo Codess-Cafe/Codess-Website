@@ -626,8 +626,7 @@ body {
 }
 @media screen and (max-width: 575px) {
   .circle {
-    width: 75px;
-    height: 75px;
+    border: 6px solid white;
   }
 
   .udemy-perk-logo {
