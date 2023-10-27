@@ -691,26 +691,31 @@ body {
 .social ul li:hover {
   transform: translate(110px, 0);
   background: #c44a73;
-  transition: all 1.5s;
+  text-decoration: none;
+}
+.social ul li a{
+  margin: 0px 2px 5px 2px;
   text-decoration: none;
   color: #f9c5d1;
+  transition: color 1.5s;
 }
 
 .social ul li:hover a {
   color: white;
-  margin: 0px 2px 5px 2px;
-  text-decoration: none;
-  color: #f9c5d1;
 }
+
 .social_icons {
   color: #f9c5d1;
+}
+
+.social ul li i {
+  transition: all 1.5s;
 }
 
 .social ul li:hover i {
   color: #c44a73;
   background: white;
   transform: rotate(360deg);
-  transition: all 1.5s;
 }
 
 .social ul li .social_icons {
