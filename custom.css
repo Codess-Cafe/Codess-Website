@@ -40,3 +40,59 @@
     font-size: 14px;
     margin-left: 15px;
 }
+
+.btn_aboutUs {
+    display: inline-block;
+    position: relative;
+    min-width: 200px;
+    height: 50px;
+    background-color: #f16593;
+    background-image: linear-gradient(315deg, #ff8dde 0%, #a88beb 74%);
+    border-radius: 60px;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    letter-spacing: 2px;
+    border: 6px solid #ffffff;
+    padding-left: 50px;
+    padding-bottom: 37px;
+    transition: 0.5s;
+    font-size: 20px;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+
+.btn_aboutUs:hover{
+  padding-left: 20px;
+  padding-right: 40px;
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+}
+
+.btn_aboutUs span{
+    position: absolute;
+    left: 5px;
+    width: 39px;
+    height: 40px;
+    background: var(--primary-gradient-purple);
+    border-radius: 50%;
+    transition: 0.5s ease-in-out;
+    margin-left: -3px;
+    margin-top: -6px;
+    align-items: center;
+    color: var(--primary-gradient-purple);
+    font-size: 1.5sem;
+}
+
+.btn_aboutUs ion-icon{
+    padding: 10px;
+    color: white;
+}
+
+.btn_aboutUs:hover span{
+    left: calc(100% - 40px);
+    padding-left: -5px;
+    /* padding-top:5px; */
+    font-weight: 600;
+}
