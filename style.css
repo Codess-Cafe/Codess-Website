@@ -173,6 +173,7 @@ body {
 /* button section ends */
 .mentors-section {
   padding: 2rem;
+  padding-left: 3rem;
   background: var(--primary-gradient-purple);
   /* color: dimgray; */
   color: rgb(255, 255, 255);
@@ -630,8 +631,7 @@ body {
 }
 @media screen and (max-width: 575px) {
   .circle {
-    width: 75px;
-    height: 75px;
+    border: 6px solid white;
   }
 
   .udemy-perk-logo {
