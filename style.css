@@ -1426,3 +1426,15 @@ h1.big-heading {
   padding: 3%;
 }
 }
+
+.faq{
+ padding-left:10%;
+ padding-right:10%;
+}
+
+.social_icons {
+  transform: scale(1.2);
+  padding-right: 12px;
+  color: black;
+}
+
