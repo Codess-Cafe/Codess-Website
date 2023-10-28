@@ -801,6 +801,7 @@ img.logo {
   font-family: Nunito, sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
+  margin-top: 20px;
 }
 .nav-item {
   padding: 10px 10px;
