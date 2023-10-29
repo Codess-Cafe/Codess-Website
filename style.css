@@ -842,59 +842,13 @@ img.logo {
   align-items: center;
   text-align: center;
 }
-/* About Us */
-.btn_aboutUs{
-  display: inline-block;
-  position: relative;
-  min-width: 200px;
-  height: 50px;
-  background: #f16593;
-  border-radius: 60px;
-  justify-content: center;
-  align-items: center;
-  color: rgba(255, 255, 255, 0.8);
-  text-decoration: none;
-  letter-spacing: 2px;
+
   
-  padding-left: 50px;
-  transition: 0.5s ;
-  font-size: 20px;
-  padding-top: 10px;
-  margin-top: 20px;
-}
 
-.btn_aboutUs:hover{
-padding-left: 20px;
-padding-right: 40px;
-color: rgba(255, 255, 255, 1);
-text-decoration: none;
-}
 
-.btn_aboutUs span{
-  position: absolute;
-  left: 5px;
-  width: 39px;
-  height: 40px;
-  background: var(--primary-gradient-purple);
-  border-radius: 50%;
-  transition: 0.5s ease-in-out;
-  margin-left: -3px;
-  margin-top: -6px;
-  align-items: center;
-  color: #1a191d;
-  font-size: 1.5sem;
-}
 
-.btn_aboutUs ion-icon{
-  padding: 10px;
-  color: white;
-}
 
-.btn_aboutUs:hover span{
-  left: calc(100% - 40px);
-  padding-left: -5px;
-  /* padding-top:5px; */
-}
+
 /* scroll up */
 .scroll-up-btn{
   position: fixed;
@@ -1347,6 +1301,7 @@ h1.big-heading {
   /* position:absolute; */
   right: 30%;
   margin-bottom: 50px;
+  margin-top: -50px;
  
 }
 
