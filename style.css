@@ -531,7 +531,7 @@ body {
 
 
 
-.circle {
+.circle-mentors {
   width: 190px;
   height: 190px;
   border-radius: 50%; 
@@ -543,7 +543,7 @@ body {
   margin-left: 45px; 
 }
 
-.circle img {
+.circle-mentors img {
   
   max-width: 100%;
   max-height: 100%;
