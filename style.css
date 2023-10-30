@@ -501,8 +501,8 @@ body {
   object-fit: cover;
   padding: 20px;
   border-radius: 5%;
-}
-.social-icons {
+} 
+  .social-icons {
   list-style: none;
   padding: 0;
   margin-bottom: 0px;
@@ -529,6 +529,11 @@ body {
   color: white; 
 }
 
+.social-icons i:hover {
+  background-color: white; /* Change the background color on hover */
+  color: #9795ef; /* Change the icon color on hover */
+  transform: scale(1.2); /* Scale the icon on hover */
+}
 
 
 .circle {
