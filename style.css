@@ -853,6 +853,12 @@ img.logo {
   text-align: center;
 }
 
+  
+
+
+
+
+
 /* scroll up */
 .scroll-up-btn{
   position: fixed;
@@ -1311,6 +1317,7 @@ h1.big-heading {
   right: 30%;
   margin-bottom: 50px;
   margin-top: -50px;
+ 
 }
 
 /* footer */
