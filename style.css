@@ -369,7 +369,7 @@ body {
  
 .text-muted {
   color: #6c757d !important;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 @media (max-width: 500px) {
