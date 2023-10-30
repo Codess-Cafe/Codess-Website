@@ -529,7 +529,10 @@ body {
   color: white; 
 }
 
-
+.row i:hover{
+  transform: scale(1.2);
+  transition-duration: 0.6s;
+}
 
 .circle {
   width: 190px;
