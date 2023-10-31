@@ -529,7 +529,10 @@ body {
   color: white; 
 }
 
-
+.mt-5 :hover{
+  transform: scale(1.1);
+  transition-duration: 0.8s;
+}
 
 .circle-mentors {
   width: 190px;
