@@ -369,7 +369,7 @@ body {
  
 .text-muted {
   color: #6c757d !important;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 @media (max-width: 500px) {
@@ -536,7 +536,7 @@ body {
 }
 
 
-.circle {
+.circle-mentors {
   width: 190px;
   height: 190px;
   border-radius: 50%; 
@@ -548,7 +548,7 @@ body {
   margin-left: 45px; 
 }
 
-.circle img {
+.circle-mentors img {
   
   max-width: 100%;
   max-height: 100%;
