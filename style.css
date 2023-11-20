@@ -589,6 +589,10 @@ body {
   font-weight: 500;
 }
 
+#new-mentors{
+  margin-bottom: 20px;
+}
+
 .sci {
   position: relative;
   display: flex;
