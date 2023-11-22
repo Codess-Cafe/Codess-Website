@@ -465,15 +465,16 @@ body {
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.1);
   border-top: 1px solid rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(15px);
+  
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
   /* glassmorphism */
 
-  backdrop-filter: blur(16px) saturate(180%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
+ 
+ 
   background-color: rgba(194, 157, 207, 0.75);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.125);
+  padding: 20px 20px 0px 0px;
 }
  .card-testimonials:hover{   
    border: 3px solid #cb68f3;
