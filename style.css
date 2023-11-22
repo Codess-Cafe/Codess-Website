@@ -529,6 +529,12 @@ body {
   color: white; 
 }
 
+.social-icons i:hover {
+  background-color: white; /* Change the background color on hover */
+  color: #9795ef; /* Change the icon color on hover */
+  transform: scale(1.2); /* Scale the icon on hover */
+}
+
 .mt-5 :hover{
   transform: scale(1.1);
   transition-duration: 0.8s;
@@ -1421,4 +1427,4 @@ h1.big-heading {
 .container-faq {
   padding: 3%;
 }
-}
+
