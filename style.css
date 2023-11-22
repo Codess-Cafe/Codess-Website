@@ -474,6 +474,7 @@ body {
   background-color: rgba(194, 157, 207, 0.75);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.125);
+  padding: 20px 20px 0px 0px;
 }
  .card-testimonials:hover{   
    border: 3px solid #cb68f3;
