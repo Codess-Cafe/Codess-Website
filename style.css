@@ -1309,6 +1309,17 @@ h1.big-heading {
   margin-top: -50px;
  
 }
+@media(max-width: 480px){
+  .title-img{
+    margin-top: 5px;
+  }
+  .mentors{
+    padding-left: 3.5%;
+  }
+  .collapsed{
+    text-align: left;
+  }
+}
 
 /* footer */
 
