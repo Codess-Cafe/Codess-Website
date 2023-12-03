@@ -1317,7 +1317,7 @@ h1.big-heading {
     padding-left: 3.5%;
   }
   .collapsed{
-    text-align: justify;
+    text-align: left;
   }
 }
 
