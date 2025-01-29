@@ -990,6 +990,16 @@ img.logo {
   line-height: 1.6;
 }
 
+#projects .project-card-content a {
+  color: black; 
+  text-decoration: none; 
+}
+
+#projects .project-card-content a:hover {
+  color: black; 
+  text-decoration: underline; 
+}
+
 
 /* upcoming chapters */
 
